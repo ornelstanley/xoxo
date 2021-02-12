@@ -1,0 +1,72 @@
+{
+  "name": "Admiral Markets",
+  "short_name": "AM",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2072E1",
+  "theme_color": "#2585FF",
+  "orientation" : "portrait-primary",
+  "gcm_sender_id": "361246025320",
+  "icons": [
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-57x57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-114x114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dce5jani6jm7e.cloudfront.net/images/public/AM-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.admiralmarkets",
+      "id": "com.admiralmarkets"
+    }, {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/ee/app/admiral-markets/id1222861799"
+  }]
+}
