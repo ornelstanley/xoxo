@@ -1,11 +1,11 @@
 @extends('layouts.master')
 @section('content')
     
-<div class="content">
+<div class="content-1" style="padding-top:155px;width: 100%;">
   
   <div class="home-page">
     <section class="hero ">
-<div class="hero-bg " style="background-image: url('../dce5jani6jm7e.cloudfront.net/data/homepage/main-hero-bg-desk.png')"></div>
+<div class="hero-bg " style="background-image: url('{{ asset('dce5jani6jm7e.cloudfront.net/data/homepage/main-hero-bg-desk.png') }}')"></div>
     <div class="container">
         <div class="wf-wrap">
 			<div class="wf-container-main">
@@ -13,7 +13,7 @@
 				
 	
 		
-			<div id="content" class="content" role="main">
+			<div id="content" class="content-1" role="main" style="width: 100%;">
 
 			
 					

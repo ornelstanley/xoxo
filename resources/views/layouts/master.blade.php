@@ -69,6 +69,8 @@
   <meta name="twitter:image" content="../admiralimages.s3.amazonaws.com/logos/AM_placeholder_940x492.png" />
   
 
+  <link rel="stylesheet" href="{{ asset('main.css') }}" />
+  <link rel="stylesheet" href="{{ asset('custom.css') }}" />
   <link rel="preconnect"
         href="http://dce5jani6jm7e.cloudfront.net/">
   <link rel="dns-prefetch"
