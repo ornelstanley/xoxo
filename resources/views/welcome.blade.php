@@ -11,7 +11,7 @@
         <div class="hero__info" >
             <h1>Pro-Trading with licensed and accredited traders</h1>
             <p>Our pro trading platform offers one of the best ROI driven solution through experienced traders</p>
-            <scroll-button href="signup.html" class="hero__link action-link"
+            <scroll-button href="{{route('learn-more')}}" class="hero__link action-link"
                color="positive" size="large" id="btn_try_now">Learn more
             </scroll-button>
         </div>
@@ -31,7 +31,7 @@
           </div>
           <div class="invest__info">
               <h3>Find Pro-Trader</h3>
-              <p>Use the earch box below to find a specific pro trader using their Trader ID</p>
+              <p>Use the search box below to find a specific pro trader using their Trader ID</p>
               <div class="">
                  
                        <div class="form-group">
@@ -39,7 +39,7 @@
                             <div class="col-sm-4 push-down-small">
                             </div>
                             <div class="col-sm-8">
-                                <input placeholder="Trader ID" class="mdc-text-field__input -ym-disable-keys" name="contact[Name]" value="" id="inputFname" data-template="<div class='tooltips-blue-bg popover' role='tooltip'><div class='arrow'></div><div class='popover-content'></div></div>" placeholder="John" data-toggle="popover" data-content="Your first name with latin letters same as in your ID" data-original-title="" title="">
+                                <input placeholder="Trader ID" value="Trader ID" class="mdc-text-field__input -ym-disable-keys" name="contact[Name]" value="" id="inputFname" data-template="<div class='tooltips-blue-bg popover' role='tooltip'><div class='arrow'></div><div class='popover-content'></div></div>" placeholder="John" data-toggle="popover" data-content="Your first name with latin letters same as in your ID" data-original-title="" title="">
                                             </div>
                         </div>
                     </div>
