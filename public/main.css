@@ -11806,7 +11806,8 @@ ul.photoSlider {
 .dt-fancy-title {
     position: relative;
     display: inline-block;
-    top: 50%
+    top: 50%;
+    padding: 1rem;
 }
 
 .dt-fancy-title.bg-on {
