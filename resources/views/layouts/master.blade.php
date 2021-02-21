@@ -68,9 +68,7 @@
   <meta name="twitter:description" content="Admiral Markets offers a state-of-the-art platform for currency & metals trading. We also offer CFDs on stocks, indices and energies." />
   <meta name="twitter:image" content="../admiralimages.s3.amazonaws.com/logos/AM_placeholder_940x492.png" />
   
-
-  <link rel="stylesheet" href="{{ asset('main.css') }}" />
-  <link rel="stylesheet" href="{{ asset('custom.css') }}" />
+  @yield('head')
   <link rel="preconnect"
         href="http://dce5jani6jm7e.cloudfront.net/">
   <link rel="dns-prefetch"
@@ -196,7 +194,7 @@
   <!-- End Google Tag Manager -->
 
 </head>
-<body class="layout-main ">
+<body class="layout-main page-template-default page page-id-28 page-parent disabled-hover-icons overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color contact-form-minimal accent-bullets bold-icons floating-mobile-menu-icon top-header first-switch-logo-left first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on no-avatars wpb-js-composer js-comp-ver-5.0.1 vc_responsive theme-am">
 
   <style>
   .is-loading{
@@ -1198,6 +1196,7 @@
 
 <script src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/build/am-prod/components67cd.js?v=f43a3305fd477b5d64da32c456f8a442') }}" type="text/javascript"></script>
 <script src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/build/am-prod/deprecated04cf.js?v=5d3b0eebe1729eb68ea033868a69b8e0') }}" type="text/javascript"></script>
+@yield('foot')
 </body>
 
 <!-- Mirrored from admiralmarkets.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 08:23:31 GMT -->

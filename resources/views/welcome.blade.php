@@ -5,11 +5,11 @@
   
   <div class="home-page">
     <section class="hero ">
-<div class="hero-bg " style="background-image: url('../dce5jani6jm7e.cloudfront.net/data/homepage/main-hero-bg-desk.png')"></div>
+<div class="hero-bg " style="background-image: url('copy/dce5jani6jm7e.cloudfront.net/data/homepage/main-hero-bg-desk.png')"></div>
     <div class="container">
     <div class="hero__wrapper">
         <div class="hero__info" >
-            <h1>Pro-Trading with licensed and accredited traders</h1>
+            <h1>Pro-Trading for licensed and accredited traders</h1>
             <p>Our pro trading platform offers one of the best ROI driven solution through experienced traders</p>
             <scroll-button href="{{route('learn-more')}}" class="hero__link action-link"
                color="positive" size="large" id="btn_try_now">Learn more
