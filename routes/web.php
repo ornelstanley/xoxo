@@ -28,4 +28,9 @@ Route::get('/learn-more',function(){
 
 Auth::routes();
 
+Route::get('/login/trader',function(){
+ return ;
+})->name('login.trader');
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

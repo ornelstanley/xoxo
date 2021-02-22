@@ -3,7 +3,7 @@
       class="no-js"
       dir="">
 
-<!-- Mirrored from admiralmarkets.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 08:17:43 GMT -->
+<!-- Mirrored from admiralmarketspro.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 08:17:43 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
   <meta http-equiv="Content-Type"
@@ -154,7 +154,7 @@
 	<link rel="alternate" href="de.html" hreflang="de-DE" />
 	<link rel="alternate" href="lv.html" hreflang="lv-LV" />
 	<link rel="alternate" href="ee.html" hreflang="et-EE" />
-	<link rel="alternate" href="https://admiralmarkets.com.au/" hreflang="en-AU" />
+	<link rel="alternate"  hreflang="en-AU" />
 
   <link rel="canonical" href="index.html" />
 
@@ -164,7 +164,7 @@
   <link rel="stylesheet" href="{{ asset('copy/dce5jani6jm7e.cloudfront.net/build/am-prod/components2a4a.css?v=5197d60a846eb47dbb996ae68f751aa5') }}">
 
     <link rel="stylesheet" href="{{ asset('copy/dce5jani6jm7e.cloudfront.net/build/am-prod/session6311.css?v=7f005a39b5363df822c8c5ab1290d465') }}">
-  <script>var CONFIG = {"api":"https:\/\/webapi.admiralmarkets.com","cspec":"https:\/\/cspec-api-tr3.admiralmarkets.com","basePath":"","dashboardURL":"https:\/\/admiralmarkets.com\/dashboard","loginURL":"https:\/\/admiralmarkets.com\/login","buildVersion":"202101210817","localeUrl":"https:\/\/dce5jani6jm7e.cloudfront.net\/build\/prod\/locale\/{locale}.json?v=90ea77a7313e0eab7556da1d3ebcfecb","localeMarketsUrl":"https:\/\/dce5jani6jm7e.cloudfront.net\/build\/markets-prod\/locale\/{locale}.json?v=539719037501db34804d581b9810ead4","siteKey":null,"markets":{"trade":"https:\/\/trade.admiralmarkets.com:8061","sellbuy":"https:\/\/trade.admiralmarkets.com:8063","ws":"wss:\/\/trade.admiralmarkets.com:8062"}}</script>
+  <script>var CONFIG = {"api":"https:\/\/webapi.admiralmarketspro.com","cspec":"https:\/\/cspec-api-tr3.admiralmarketspro.com","basePath":"","dashboardURL":"https:\/\/admiralmarketspro.com\/dashboard","loginURL":"https:\/\/admiralmarketspro.com\/login","buildVersion":"202101210817","localeUrl":"https:\/\/dce5jani6jm7e.cloudfront.net\/build\/prod\/locale\/{locale}.json?v=90ea77a7313e0eab7556da1d3ebcfecb","localeMarketsUrl":"https:\/\/dce5jani6jm7e.cloudfront.net\/build\/markets-prod\/locale\/{locale}.json?v=539719037501db34804d581b9810ead4","siteKey":null,"markets":{"trade":"https:\/\/trade.admiralmarketspro.com:8061","sellbuy":"https:\/\/trade.admiralmarketspro.com:8063","ws":"wss:\/\/trade.admiralmarketspro.com:8062"}}</script>
   <script src="{{asset('copy/dce5jani6jm7e.cloudfront.net/build/am-prod/sessionbd06.js?v=b0ad349c258cfd74c5f5f51795f1863b')}}"></script>
 
   <!-- anti-flicker -->
@@ -187,7 +187,7 @@
               j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
           j.async = true;
           j.src =
-              'https://admiralmarkets.com/tagmanager?id=' + i + dl;
+              'https://admiralmarketspro.com/tagmanager?id=' + i + dl;
           f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-KT9XPJ');
   </script>
@@ -247,7 +247,7 @@
 </li>
               <li class="mp-list-item">
    <span class="mp-vertscore"></span>
-    <a class="mp-list-item-tex" data-cy="regulator-asic" href="https://admiralmarkets.com.au/">
+    <a class="mp-list-item-tex" data-cy="regulator-asic" >
     Admiral Markets Pty Ltd
   </a>
 </li>
@@ -393,7 +393,7 @@
 </li>
               <li class="mp-list-item">
    <span class="mp-vertscore"></span>
-    <a class="mp-list-item-tex" data-cy="regulator-asic" href="https://admiralmarkets.com.au/">
+    <a class="mp-list-item-tex" data-cy="regulator-asic" >
     Admiral Markets Pty Ltd
   </a>
 </li>
@@ -422,7 +422,7 @@
               </a>
             </li>
             <li class="mp-list-item ">
-              <a rel="nofollow" target="__blank" href="https://web.admiralmarkets.com/?version=5" class="mp-list-item-text">
+              <a rel="nofollow" target="__blank" href="" class="mp-list-item-text">
                 <span class="material-icons">open_in_new</span>
                 MT5 WebTrader
               </a>
@@ -497,7 +497,7 @@
     </div>
                   <a class="mp-language-modal-item  current "
    data-cy="language-com"
-   href="index.html?link=https%3A%2F%2Fadmiralmarkets.com">
+  >
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com.png')}}"/>
@@ -508,8 +508,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-au"
-   href="https://admiralmarkets.com.au/">
+   data-cy="language-au">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/au.png')}}"/>
@@ -520,8 +519,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-de"
-   href="de.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fde">
+   data-cy="language-com-de">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/de.png') }}"/>
@@ -532,8 +530,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-fr"
-   href="fr.html?link=https%3A%2F%2Fadmiralmarkets.com%2Ffr">
+   data-cy="language-com-fr">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-fr.png')}}"/>
@@ -544,8 +541,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-nl"
-   href="nl.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fnl">
+   data-cy="language-com-nl">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-nl.png') }}"/>
@@ -556,8 +552,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-it"
-   href="it.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fit">
+   data-cy="language-com-it">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-it.png') }}"/>
@@ -568,8 +563,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-ro"
-   href="ro.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fro">
+   data-cy="language-com-ro">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-ro.png') }}"/>
@@ -580,8 +574,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-es"
-   href="es.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fes">
+   data-cy="language-com-es">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-es.png') }}"/>
@@ -592,8 +585,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-latam"
-   href="latam.html?link=https%3A%2F%2Fadmiralmarkets.com%2Flatam">
+   data-cy="language-com-latam">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-latam.png') }}"/>
@@ -604,8 +596,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-pt"
-   href="pt.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fpt">
+   data-cy="language-com-pt">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-pt.png') }}"/>
@@ -616,8 +607,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-lv"
-   href="lv.html?link=https%3A%2F%2Fadmiralmarkets.com%2Flv">
+   data-cy="language-com-lv">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/lv.png') }}"/>
@@ -628,8 +618,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-lt"
-   href="lt.html?link=https%3A%2F%2Fadmiralmarkets.com%2Flt">
+   data-cy="language-com-lt">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/lt.png')}}"/>
@@ -640,8 +629,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-ee"
-   href="ee.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fee">
+   data-cy="language-com-ee">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/ee.png') }}"/>
@@ -652,8 +640,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-ru"
-   href="ru.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fru">
+   data-cy="language-com-ru">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-ru.png') }}"/>
@@ -664,8 +651,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-hu"
-   href="hu.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fhu">
+   data-cy="language-com-hu">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/hu.png') }}"/>
@@ -676,8 +662,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-pl"
-   href="pl.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fpl">
+   data-cy="language-com-pl">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/pl.png') }}"/>
@@ -688,8 +673,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-hr"
-   href="hr.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fhr">
+   data-cy="language-com-hr">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-hr.png') }}"/>
@@ -700,8 +684,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-cz"
-   href="cz.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fcz">
+   data-cy="language-com-cz">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-cz.png') }}"/>
@@ -712,8 +695,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-bg"
-   href="bg.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fbg">
+   data-cy="language-com-bg">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/bg.png') }}"/>
@@ -724,8 +706,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-si"
-   href="si.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fsi">
+   data-cy="language-com-si">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/si.png') }}"/>
@@ -736,8 +717,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-vn"
-   href="vn.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fvn">
+   data-cy="language-com-vn">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-vn.png') }}"/>
@@ -748,8 +728,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-id"
-   href="id.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fid">
+   data-cy="language-com-id">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-id.png') }}"/>
@@ -760,8 +739,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-in"
-   href="in.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fin">
+   data-cy="language-com-in">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-in.png') }}"/>
@@ -772,8 +750,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-th"
-   href="th.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fth">
+   data-cy="language-com-th">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-th.png') }}"/>
@@ -784,8 +761,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-ar"
-   href="ar.html?link=https%3A%2F%2Fadmiralmarkets.com%2Far">
+   data-cy="language-com-ar">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-ar.png') }}"/>
@@ -796,8 +772,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-bn"
-   href="bn.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fbn">
+   data-cy="language-com-bn">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-bn.png') }}"/>
@@ -808,8 +783,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-km"
-   href="km.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fkm">
+   data-cy="language-com-km">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-km.png') }}"/>
@@ -820,8 +794,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-ko"
-   href="ko.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fko">
+   data-cy="language-com-ko">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/com-ko.png') }}"/>
@@ -832,8 +805,7 @@
   <span class="mp-vertscore"></span>
 </a>
               <a class="mp-language-modal-item "
-   data-cy="language-com-cn"
-   href="cn.html?link=https%3A%2F%2Fadmiralmarkets.com%2Fcn">
+   data-cy="language-com-cn">
   <span class="mp-selected-lang"></span>
   <figure class="mp-language-modal-img">
     <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/app/common-assets/flags/au-cn.png') }}"/>
@@ -1153,34 +1125,7 @@
     }());
     detectModule.init();
 </script>
-    <script>
-        var vueQuotesConfig = {
-            'pairs': "[DAX30],EURUSD,GBPUSD,USDJPY,GOLD,[DJI30],BRENT,[NQ100]",
-            'fullPathUrl': "https://admiralmarkets.com/start-trading/contract-specifications/instrument",
-            'defaultQuoteUrl': "https://admiralmarkets.com/api/ajax/quotes_cfd",
-            'tokenUrl': "https://admiralmarkets.com/api/ajax/quotes_token",
-            'showBuyBtn': false,
-            'showSellBtn': false,
-            'quotesUpdateTimeMs': 3000,
-            'translations': {
-                pricesAboveParagraph: "Prices above are indicative only",
-                showAllInstruments: null,
-                sellButton: 'Sell',
-                buyButton: 'Buy'
-            },
-            'links': {
-                showInstruments: 'https://admiralmarkets.com/start-trading/contract-specifications',
-                sellButtonLink: 'https://admiralmarkets.com/login',
-                buyButtonLink: 'https://admiralmarkets.com/login'
-            },
-            'headerTitles': [
-                {name: 'symbol', label: "Symbol"},
-                {name: 'bid', label: "Bid"},
-                {name: 'ask', label: "Ask"},
-                {name: 'spread', label: "Spread"},
-            ],
-            'spreadValues': {"[CAC40]":1,"[DAX30]":1,"[DJI30]":1,"BRENT":1,"GOLD":1,"WTI":1,"AUDUSD":10000,"EURJPY":100,"EURUSD":10000,"GBPUSD":10000,"USDCHF":10000,"USDCAD":10000,"USDJPY":100,"BTCUSD":1,"[SP500]":1,"[FTSE100]":1,"SILVER":1,"NGAS":1,"#AAPL":100,"#GOOG":100,"#FB":100,"#BNP":1000,"#BMW":1000,"#GDX":100,"#AMLP":100,"#SPXU":100,"_ustnote":100,"_bund":100,"#XLF":100,"#QQQ":100,"#EEMUS":100,"#SPY":100,"EXS1":100,"ISF":1,"CSSMI":100,"BNKE":100,"DBXD":100,"[NQ100]":1}        };
-    </script>
+    
 
 <script src="{{ asset('copy/cdn.jsdelivr.net/npm/sourcebuster%401.1.0/dist/sourcebuster.min.js') }}" type="text/javascript"></script>
 <script type="text/javascript">
@@ -1199,5 +1144,5 @@
 @yield('foot')
 </body>
 
-<!-- Mirrored from admiralmarkets.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 08:23:31 GMT -->
+<!-- Mirrored from admiralmarketspro.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 08:23:31 GMT -->
 </html>

@@ -172,7 +172,7 @@
                             <div class="inner">
                                 <h4>Protection</h4>
                                 <p class="description">
-                                    Segregation of funds, ICF protection up to 20,000 EUR and Negative Balance Protection Policy with the maximum payout of 50,000 EUR. <a href="https://admiralmarkets.com/about-us/financial-security?regulator=cysec">More...</a>
+                                    Segregation of funds, ICF protection up to 20,000 EUR and Negative Balance Protection Policy with the maximum payout of 50,000 EUR. 
                                 </p>
                             </div>
                         </li>
@@ -199,9 +199,7 @@
                             <div class="inner">
                                 <h4>Best Execution</h4>
                                 <p class="description">
-                                                                            We owe all our clients a duty of best execution and professional clients benefit from our Best Execution Policy. <a href="https://admiralmarkets.com/start-trading/documents/order-execution-policy?regulator=cysec"
-                                           target="_blank">More...</a>
-                                                                    </p>
+                                                                            We owe all our clients a duty of best execution and professional clients benefit from our Best Execution Policy.                                                                     </p>
                             </div>
                         </li>
 
@@ -220,10 +218,10 @@
                         
                                                             Forex and CFD`s carry a high level of risk and losses may exceed your initial deposit. Admiral Markets recommends you seek advice from an independent financial advisor to ensure that you understand
 
-                                                                    <a href="https://admiralmarkets.com/risk-disclosure?regulator=cysec">the risks involved with Forex, CFD’s, Margin and Leveraged trading.</a>
+                                                                    the risks involved with Forex, CFD’s, Margin and Leveraged trading.
                                                             
                         
-                                                        Additionally, please be advised to study our <a href="https://admiralmarkets.com/start-trading/documents?regulator=cysec" target="_blank" class="">Key Information Documents</a> in order to understand the nature, risks, costs, potential gains and losses of products offered by us.
+                                                        Additionally, please be advised to study our Key Information Documents in order to understand the nature, risks, costs, potential gains and losses of products offered by us.
                                                     </small>
                 </div>
             </div>
@@ -338,7 +336,7 @@
                     <div class="wrap">
                         <p class="muted centered p-t-lg">Start your Admiral Markets Pro application by opening a live trading account</p>
 
-                    <a href="#"
+                    <a href="{{ route('register') }}"
                        id="btn_open_account"
                        class="btn custom-btn open-reg scroll-btn" data-scrollto="#registration-form">
                         OPEN AN ACCOUNT
@@ -367,7 +365,7 @@
                     <div class="wrap">
                         <p class="muted centered p-t-lg">Start your Admiral Markets Pro application by filling the Professional Terms form</p>
 
-                        <a rel="nofollow" style="" target="_blank" href="https://tr.admiralmarkets.com.cy/index/auth/lang/en"
+                        <a rel="nofollow" style="" target="_blank" href="{{ route('login.trader') }}"
                            class="custom-btn btn analyt-existing-clicked-tr">LOGIN TO TRADER`S ROOM</a>
                     </div>
                 </div>
@@ -385,22 +383,11 @@
                                                     <a href="tel:+35722262181">+357 22 262 181</a>
                         
                     </li>
-                    <li class="hidden-xs open-chat">
-                        <a rel="nofollow" target="_blank"
-                           href="https://v2.zopim.com/widget/livechat.html?api_calls=%5B%5D&amp;hostname=admiralmarkets.com&amp;key=1qRkJv7AupI1cw9qs5jAn4kVk6IMXCg6&amp;lang=en_GB&amp;"
-                           id="btn_open_live_chat"
-                           class="btn-outline ">
-                            OPEN LIVE CHAT
-                        </a>
-                    </li>
                     <li class="email">
-                        <a href="mailto:global@admiralmarkets.com">global@admiralmarkets.com</a>
+                        <a href="mailto:support@admiralmarketspro.com">support@admiralmarketspro.com</a>
                     </li>
                 </ul>
-                <a rel="nofollow" target="_blank"
-                   href="https://v2.zopim.com/widget/livechat.html?api_calls=%5B%5D&amp;hostname=admiralmarkets.com&amp;key=1qRkJv7AupI1cw9qs5jAn4kVk6IMXCg6&amp;lang=en_GB&amp;"
-                   class="btn-outline hidden-md">OPEN LIVE CHAT</a>
-            </div>
+             </div>
         </section>
 
         <section class="faq" id="faq">
@@ -429,7 +416,7 @@
                         </a>
 
                         <div class="tab-content">
-                            If you are not eligible for Admiral Markets Pro, you can still trade thousands of financial instruments in the world`s most popular trading platforms, MetaTrader 4 & MetaTrader 5, on the standard retail trading terms. Remember, you can apply to professional terms later, when the eligibility criteria are met. <a href="https://admiralmarkets.com/start-trading/account-types?regulator=cysec" target="_self" class="">Learn more...</a>
+                            If you are not eligible for Admiral Markets Pro, you can still trade thousands of financial instruments in the world`s most popular trading platforms, MetaTrader 4 & MetaTrader 5, on the standard retail trading terms. Remember, you can apply to professional terms later, when the eligibility criteria are met.
                         </div>
                     </div>
                 </li>
@@ -457,7 +444,7 @@
 
 
                                                             <p>
-                                    In addition, either professional and retail clients get access to our exclusive <a href="https://admiralmarkets.com/products/volatility-protection?regulator=cysec" target="_blank" class="">Volatility Protection Settings</a> service, which helps minimise the risks connected to market volatility.
+                                    In addition, either professional and retail clients get access to our exclusive Volatility Protection Settings service, which helps minimise the risks connected to market volatility.
                                 </p>
                         </div>
                     </div>
@@ -478,7 +465,7 @@
                                         <b>No leverage restrictions:</b> as a professional client, you won`t be subject to the leverage restrictions and will be able to use a higher leverage; by doing so, you can amplify your gains and losses.
                                     </li>
                                     <li style='font-weight: normal !important;color: #8B8EA8;'>
-                                        <b>Negative balance protection:</b> you can get a maximum coverage of 50,000 EUR for your netted account deficits as per our <a href="https://admiralmarkets.com/start-trading/documents/negative-balance-protection-policy-pro?regulator=cysec" target="_blank" class="">Negative Balance Protection Policy</a>, while retail clients have no such limit and are covered on per-account basis.
+                                        <b>Negative balance protection:</b> you can get a maximum coverage of 50,000 EUR for your netted account deficits as per our Negative Balance Protection Policy, while retail clients have no such limit and are covered on per-account basis.
                                     </li>
                                     <li style='font-weight: normal !important;color: #8B8EA8;'>
                                         <b>Communications and risk warnings:</b> we will have a option to communicate with you using a professional language; also, we may not issue a risk warning when we get in touch or promote a new product.
@@ -527,7 +514,7 @@
 
 
                             <p>
-                                If you already have a CFD account with us (account types: Admiral.Markets, Admiral.MT5 or Admiral.Prime), you can <a href="https://admiralmarkets.com/login?regulator=cysec" target="_blank" class="">apply to Admiral Markets Pro now</a> in Trader`s Room, if you think you may be eligible.
+                                If you already have a CFD account with us (account types: Admiral.Markets, Admiral.MT5 or Admiral.Prime), you can apply to Admiral Markets Pro now in Trader`s Room, if you think you may be eligible.
                             </p>
                         </div>
                     </div>
@@ -563,7 +550,6 @@
                     More questions about trading with us?
                 </p>
 
-                <a href="https://admiralmarkets.com/faq?regulator=cysec" target="_blank" class="">See all our FAQs</a>
             </div>
         </section>
 
@@ -585,7 +571,7 @@
             <div class="inner container">
                 <h1>Not eligible for Admiral Markets Pro?</h1>
                 <p class="description">
-                    You can still trade over <a href="https://admiralmarkets.com/start-trading/contract-specifications?regulator=cysec" target="_self" class="">3,000 markets</a> in the world`s most popular trading platforms, MetaTrader 4 & 5, with access to our exclusive <a href="https://admiralmarkets.com/trading-platforms/metatrader-se?regulator=cysec" target="_self" class="">MT Supreme Edition</a> and <a href="https://admiralmarkets.com/products/volatility-protection?regulator=cysec" target="_self" class="">Volatility Protection Settings</a>, market news and analysis by Dow Jones Newswires and free education.
+                    You can still trade over 3,000 markets in the world`s most popular trading platforms, MetaTrader 4 & 5, with access to our exclusive MT Supreme Edition and Volatility Protection Settings, market news and analysis by Dow Jones Newswires and free education.
                 </p>
 
                 <span id="registration-form">
