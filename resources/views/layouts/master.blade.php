@@ -317,7 +317,6 @@
     <span class="mp-underscore"></span>
     <a data-cy="nav_main_about-us.index" class="mp-nav-text" href="{{ route('about') }}">
       About Us
-              <span class="material-icons mp-nav-arrow">expand_more</span>
           </a>
   </div>
 
@@ -328,7 +327,6 @@
     <span class="mp-underscore"></span>
     <a data-cy="nav_main_start-trading.index" class="mp-nav-text" href="https://www.worldanimalprotection.org.au/our-work/animals-in-the-wild">
       AP Campaign
-              <span class="material-icons mp-nav-arrow">expand_more</span>
           </a>
   </div>
   </div>
@@ -338,7 +336,6 @@
     <span class="mp-underscore"></span>
     <a data-cy="nav_main_trading-platforms.index" class="mp-nav-text" href="{{ route('register')}}">
       Sign Up
-              <span class="material-icons mp-nav-arrow">expand_more</span>
           </a>
   </div>
   </div>
@@ -348,7 +345,6 @@
     <span class="mp-underscore"></span>
     <a data-cy="nav_main_analytics.index" class="mp-nav-text" href="{{ route('login') }}">
       Log In
-              <span class="material-icons mp-nav-arrow">expand_more</span>
           </a>
   </div>
   </div>
