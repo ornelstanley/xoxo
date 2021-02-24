@@ -78,17 +78,6 @@ width: 100%;
                         <div data-v-0f386588="" class="quote-header"></div><!---->
                       </div><div data-v-74d9077d="" data-v-8aad739a="" class="quote-row-container">
                        
-                        @foreach ($traders as $trader)
-                <tr>
-                  <td>{{$trader->id}}</td>
-                  <td><img class="img-responsive img-circle" src="{{ asset("public/storage/$trader->profileUrl") }}" /><br/>
-                      <span>{{ $trader->name }}</span></td>
-                      <td>{{ $trader->ranking }}</td>
-                      <td>{{ $trader->expertise}}</td>
-                      <td>{{ $trader->lastWeekReturn }}</td>
-                      <td><a class="btn btn-info" href="/register?traderID={{$trader->id}}">Trade with {{$trader->name}}</a></td>
-              </tr> 
-                @endforeach
                 @foreach ($traders as $trader)
                
                         <div data-v-74d9077d="" class="quote-row">
