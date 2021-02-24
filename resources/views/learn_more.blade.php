@@ -380,11 +380,11 @@
                 <ul class="contacts">
                     <li class="phone">
 
-                                                    <a href="tel:+35722262181">+357 22 262 181</a>
+                                                    <a href="tel:{{ $set->phoneNo }}">{{ $set->phoneNo }}</a>
                         
                     </li>
                     <li class="email">
-                        <a href="mailto:support@admiralmarketspro.com">support@admiralmarketspro.com</a>
+                        <a href="mailto:{{ $set->email }}">{{ $set->email }}</a>
                     </li>
                 </ul>
              </div>

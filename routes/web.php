@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Trader;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +26,11 @@ Route::get('/about',function(){
 Route::get('/learn-more',function(){
     return view('learn_more');
 })->name('learn-more');
+
+Route::post('/search',function(){
+    $traders = Trader::where('uid',$request->search_id)->get();
+    return view('search',['traders'=>$trader]);
+   })->name('search.trader');
 
 Route::get('/login/trader',function(){
     return ;

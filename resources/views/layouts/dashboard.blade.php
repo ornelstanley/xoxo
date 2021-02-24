@@ -9,12 +9,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
-	<meta name="author" content="Bootlab">
+	<meta name="author" content="Admiral Markets Pro">
 
-	<title>Default Dashboard | AppStack - Admin &amp; Dashboard Template</title>
+	<title>Admiral Markets Pro | Dashboard</title>
 
-	<link rel="canonical" href="dashboard-default.html" />
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="canonical" href="/" />
+	<link rel="shortcut icon" href="{{ route('img/favicon.ico') }}">
 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet">
 
@@ -24,26 +24,15 @@
 
 	<!-- BEGIN SETTINGS -->
 	<!-- Remove this after purchasing -->
-	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
-	<script src="js/settings.js"></script>
-	<!-- END SETTINGS -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2120269,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3ZYEKLQ68"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<link class="js-stylesheet" href="{{ route('dashboard/css/light.css') }}" rel="stylesheet">
+	<script src="{{ route('dashboard/js/settings.js') }}"></script>
+	
+    <script src="https://use.fontawesome.com/f567287291.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!-- END SETTINGS --> 
+	<link href="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha256-R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=" >
 
-  gtag('config', 'G-Q3ZYEKLQ68');
-</script></head>
+</head>
 <!--
   HOW TO USE: 
   data-theme: default (default), dark, light
@@ -117,9 +106,56 @@
 	</div>
 
 	<script src="{{ route('dashboard/js/app.js') }}"></script>
-
+	<script src="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.js" crossorigin="anonymous" integrity="sha256-Hgwq1OBpJ276HUP9H3VJkSv9ZCGRGQN+JldPJ8pNcUM=" ></script>
+   
 	@yield('footer')
 
+	@if (session('success'))
+    <script>
+      "use strict";
+        $(document).ready(function () {
+            swal("Success!", "{{ session('success') }}", "success");
+        });
+    </script>
+@endif
+
+@if (session('error'))
+    <script>
+      "use strict";
+        $(document).ready(function () {
+            swal("Sorry!", "{{ session('error') }}", "error");
+        });
+    </script>
+@endif
+<script>
+@if(Session::has('message'))
+"use strict";
+var type = "{{Session::get('alert-type','info')}}";
+switch (type) {
+    case 'info':
+        toastr.info("{{Session::get('message')}}");
+        break;
+    case 'warning':
+        toastr.warning("{{Session::get('message')}}");
+        break;
+    case 'success':
+        toastr.success("{{Session::get('message')}}");
+        break;
+    case 'error':
+        toastr.error("{{Session::get('message')}}");
+        break;
+}
+@endif
+</script>
+<script>
+window.addEventListener('load',function(){
+    @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                toastr.error("{{ $error }}");
+            @endforeach
+@endif
+});
+</script>
 </body>
 
 

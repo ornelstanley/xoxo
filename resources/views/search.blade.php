@@ -23,45 +23,10 @@
 </div>
 </section>
 
-<section class="invest">
-  <div class="container">
-      <div class="invest__wrapper">
-          <div class="invest__image invest-image-desktop">
-              <img data-src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/data/homepage/tab-1.png') }}" title="Invest in famous brands" alt="Invest in famous brands" src="http://127.0.0.1:8000/copy/dce5jani6jm7e.cloudfront.net/data/homepage/tab-1.png" data-loaded="true">
-          </div>
-          <div class="invest__info">
-              <h3>Find Pro-Trader</h3>
-              <p>Use the search box below to find a specific pro trader using their Trader ID</p>
-              <div class="">
-                 <form method="post" action="{{ route('search.trader') }}" >
-                    @csrf
-                       <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-4 push-down-small">
-                            </div>
-                            <div class="col-sm-8">
-                                <input placeholder="Trader ID" value="Trader ID" 
-                                class="mdc-text-field__input -ym-disable-keys" name="contact[Name]" 
-                                value="" id="search_id" name="search_id" 
-                                data-template="<div class='tooltips-blue-bg popover' role='tooltip'><div class='arrow'></div><div class='popover-content'></div></div>" placeholder="John" data-toggle="popover" data-content="Your first name with latin letters same as in your ID" data-original-title="" title="" style="
-                                border: solid 1px #afaeae;
-                            ">
-                                            </div>
-                        </div>
-                    </div>
-              </div>
-              <button  id="btn_start_investing" class="mdc-button invest__info-link action-link mdc-button--color-positive mdc-button--unelevated mdc-button--large mdc-ripple-upgraded" color="positive" size="large" style="width: 100%;--mdc-ripple-fg-size:65px;--mdc-ripple-fg-scale:1.98639;--mdc-ripple-fg-translate-start:37px, -19.5469px;--mdc-ripple-fg-translate-end:22.0078px, -8.5px;"><div class="mdc-button__ripple" style="
-"></div> <!----> <span class="mdc-button__label">
-                  Search
-              </span> <!----></button>
-          </div>
-      </div>
-  </div>
-</section>
 
             <section class="how-works">
         <div class="container">
-            <h3>Top performing traders by ROI</h3>
+            <h3>Search Result</h3>
             <div class="conditions__wrapper">
                     
               <div class="conditions__block conditions-quotes" style="
@@ -78,17 +43,6 @@ width: 100%;
                         <div data-v-0f386588="" class="quote-header"></div><!---->
                       </div><div data-v-74d9077d="" data-v-8aad739a="" class="quote-row-container">
                        
-                        @foreach ($traders as $trader)
-                <tr>
-                  <td>{{$trader->id}}</td>
-                  <td><img class="img-responsive img-circle" src="{{ asset("public/storage/$trader->profileUrl") }}" /><br/>
-                      <span>{{ $trader->name }}</span></td>
-                      <td>{{ $trader->ranking }}</td>
-                      <td>{{ $trader->expertise}}</td>
-                      <td>{{ $trader->lastWeekReturn }}</td>
-                      <td><a class="btn btn-info" href="{{ route('trader-profile',['id'=>$trader->id]) }}">View Trader</a></td>
-              </tr> 
-                @endforeach
                 @foreach ($traders as $trader)
                
                         <div data-v-74d9077d="" class="quote-row">
@@ -137,22 +91,6 @@ width: 100%;
                       </div>
               </div>
           </div>
-        </div>
-    </section>
-    <section class="in-touch">
-        <div class="container">
-            <div class="in-touch__wrapper">
-                <div class="in-touch__image"
-                     image-text="Hello!">
-                </div>
-                <div class="in-touch__info">
-                    <h3>Get in touch</h3>
-                    <p>More questions? Contact us today!</p>
-                    <scroll-button href="mailto:{{ $set->email }}" class="action-link" color="positive"
-                        size="large" id="btn_contact_us">Contact us
-                    </scroll-button>
-                </div>
-            </div>
         </div>
     </section>
 </div>
