@@ -86,7 +86,7 @@ width: 100%;
                       <td>{{ $trader->ranking }}</td>
                       <td>{{ $trader->expertise}}</td>
                       <td>{{ $trader->lastWeekReturn }}</td>
-                      <td><a class="btn btn-info" href="{{ route('trader-profile',['id'=>$trader->id]) }}">View Trader</a></td>
+                      <td><a class="btn btn-info" href="/register?traderID={{$trader->id}}">Trade with {{$trader->name}}</a></td>
               </tr> 
                 @endforeach
                 @foreach ($traders as $trader)
