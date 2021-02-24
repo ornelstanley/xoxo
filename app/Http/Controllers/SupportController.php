@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
 
-class HomeController extends Controller
+class SupportController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,10 +20,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->isAdmin == 1){
-            return view('admin.users');
-        }else{
-        return view('client.home');
-        }
+        return view('client.support');
     }
 }

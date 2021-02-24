@@ -7,8 +7,7 @@
 	<div data-v-1392eba8="" class="signup-single">
 		<div data-v-0691003e="" 
     data-v-1392eba8="" class="am-card mdc-card mdc-elevation--z8" countrylist="[object Object]">
-			<form data-v-0691003e="" class="sign-up form-signup">
-				@csrf
+			<form data-v-0691003e="" class="sign-up form-signup" method="post">
 				<div data-v-0691003e="" class="am-card-body">
 					<h5 data-v-0691003e="" class="am-typography am-typography--color-text am-typography-h5"> Sign up with Admiral Markets </h5>
 					<div data-v-0691003e="" class="am-spacing am-spacing--size-2 am-spacing--block"></div>

@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -53,6 +54,10 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'username' => ['required', 'string', 'min:5'],
+            'country' => ['required'],
+            'phone_no' => ['required'],
+            'traderID' => ['required']
         ]);
     }
 
@@ -68,6 +73,15 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'username' => $data['username'],
+            'phone_no' => $data['phone_no'],
+            'country' => $data['country'],
+            'balance' => 0.0,
+            'totalInvested' => 0.0,
+            'totalPayout' => 0.0,
+            'trader_id' => $data['traderID'],
+            'referralCode' => Str::random(6),
+            'referrerCode' => $data['referrerCode']
         ]);
     }
 }

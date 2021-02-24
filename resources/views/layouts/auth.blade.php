@@ -6,6 +6,8 @@
 <!-- Mirrored from admiralmarkets.com/signup by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 11:24:15 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+      
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="Content-Type"
           content="text/html; charset=utf-8"/>
     <meta http-equiv="content-language"

@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Trade;
 use Auth;
 
-class HomeController extends Controller
+class TraderController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,10 +22,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->isAdmin == 1){
-            return view('admin.users');
-        }else{
-        return view('client.home');
-        }
+        $trades = Trade::whereUserId(Auth::user()->id)->get();
+        return view('client.trader',['trades'=>$trades]);
     }
 }
