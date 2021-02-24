@@ -51,7 +51,7 @@
                 </div>
               </div>
               <div class="col-6 align-self-end text-right">
-                <img src="img/illustrations/customer-support.png" alt="Customer Support" class="img-fluid illustration-img">
+                <img src="dashboard/img/illustrations/customer-support.png" alt="Customer Support" class="img-fluid illustration-img">
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@
           </div>
           <div class="card-body">
             <div class="media">
-              <img src="img/avatars/avatar-5.jpg" width="36" height="36" class="rounded-circle mr-2" alt="Ashley Briggs">
+              <img src="dashboard/img/avatars/avatar-5.jpg" width="36" height="36" class="rounded-circle mr-2" alt="Ashley Briggs">
               <div class="media-body">
                 <small class="float-right text-navy">5m ago</small>
                 <strong>Ashley Briggs</strong> started following <strong>Stacie Hall</strong><br />
@@ -167,7 +167,7 @@
 
             <hr />
             <div class="media">
-              <img src="img/avatars/avatar.jpg" width="36" height="36" class="rounded-circle mr-2" alt="Chris Wood">
+              <img src="dashboard/img/avatars/avatar.jpg" width="36" height="36" class="rounded-circle mr-2" alt="Chris Wood">
               <div class="media-body">
                 <small class="float-right text-navy">30m ago</small>
                 <strong>Chris Wood</strong> posted something on <strong>Stacie Hall</strong>'s timeline<br />
@@ -181,7 +181,7 @@
 
             <hr />
             <div class="media">
-              <img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle mr-2" alt="Stacie Hall">
+              <img src="dashboard/img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle mr-2" alt="Stacie Hall">
               <div class="media-body">
                 <small class="float-right text-navy">1h ago</small>
                 <strong>Stacie Hall</strong> posted a new blog<br />
