@@ -21,7 +21,7 @@
 												<div class="mdc-notched-outline mdc-notched-outline--upgraded">
 													<div class="mdc-notched-outline__leading"></div>
 													<div class="mdc-notched-outline__notch">
-														<label class="mdc-floating-label" style="">Email</label>
+														<label class="mdc-floating-label" style=""></label>
 														<!---->
 														<!---->
 														<!---->
@@ -43,7 +43,7 @@
 													<div class="mdc-notched-outline mdc-notched-outline--upgraded">
 														<div class="mdc-notched-outline__leading"></div>
 														<div class="mdc-notched-outline__notch">
-															<label class="mdc-floating-label" style="">Password</label>
+															<label class="mdc-floating-label" style=""></label>
 															<!---->
 															<!---->
 															<!---->

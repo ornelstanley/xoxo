@@ -14,7 +14,7 @@
 	<title>Admiral Markets Pro | Dashboard</title>
 
 	<link rel="canonical" href="/" />
-	<link rel="shortcut icon" href="{{ route('img/favicon.ico') }}">
+	<link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet">
 
@@ -24,8 +24,8 @@
 
 	<!-- BEGIN SETTINGS -->
 	<!-- Remove this after purchasing -->
-	<link class="js-stylesheet" href="{{ route('dashboard/css/light.css') }}" rel="stylesheet">
-	<script src="{{ route('dashboard/js/settings.js') }}"></script>
+	<link class="js-stylesheet" href="{{ asset('dashboard/css/light.css') }}" rel="stylesheet">
+	<script src="{{ asset('dashboard/js/settings.js') }}"></script>
 	
     <script src="https://use.fontawesome.com/f567287291.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -105,7 +105,7 @@
 		</div>
 	</div>
 
-	<script src="{{ route('dashboard/js/app.js') }}"></script>
+	<script src="{{ asset('dashboard/js/app.js') }}"></script>
 	<script src="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.js" crossorigin="anonymous" integrity="sha256-Hgwq1OBpJ276HUP9H3VJkSv9ZCGRGQN+JldPJ8pNcUM=" ></script>
    
 	@yield('footer')
