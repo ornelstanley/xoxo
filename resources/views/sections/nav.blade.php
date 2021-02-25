@@ -18,7 +18,7 @@
 				<ul class="sidebar-nav">
 					
 					<li class="sidebar-item active">
-						<a href="./"  class="sidebar-link">
+						<a href="{{ route('home') }}"  class="sidebar-link">
                          <i class="align-middle" data-feather="home"></i> <span class="align-middle">Dashboard</span>
               
             </a>
