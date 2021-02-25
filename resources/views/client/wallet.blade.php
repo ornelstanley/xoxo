@@ -23,10 +23,10 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Withdrawal</h3>
+                        <h3 class="text-themecolor">Wallet</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Withdraw</li>
+                            <li class="breadcrumb-item active">Wallet</li>
                         </ol>
                     </div>
                 </div>
@@ -42,14 +42,14 @@
 <a class="btn btn-light bg-white shadow-sm " id="day" href="{{ route('withdraw') }}" aria-haspopup="true" aria-expanded="false">
     <i class="align-middle mt-n1" data-feather="user-minus"></i> Withdraw
 </a>
-  
+  &nbsp;
 <a class="btn btn-light bg-white shadow-sm " id="day" href="{{ route('deposit') }}"  aria-haspopup="true" aria-expanded="false">
     <i class="align-middle mt-n1" data-feather="user-minus"></i> Fund Wallet
 </a>
                 </div></div>
                 <div class="row">
                     <!-- Column -->
-                    <div class="col-lg-3 col-xlg-4 col-md-3">
+                    <div class="col-lg-4 col-xlg-4 col-md-4">
                         <div class="card">
                             <div class="card-body">
                                 <h2>Wallet Balance</h2>
@@ -59,7 +59,7 @@
                     </div>
                     <!-- Column -->
                     <!-- Column -->
-                    <div class="col-lg-3 col-xlg-4 col-md-3">
+                    <div class="col-lg-4 col-xlg-4 col-md-4">
                         <div class="card">
                             <div class="card-body">
                                 <h2>Pending Deposit</h2>
@@ -69,7 +69,7 @@
                     </div>
                     <!-- Column -->
                     <!-- Column -->
-                    <div class="col-lg-3 col-xlg-4 col-md-3">
+                    <div class="col-lg-4 col-xlg-4 col-md-4">
                         <div class="card">
                             <div class="card-body">
                                 <h2>Pending Withdrawal</h2>
@@ -81,7 +81,7 @@
                     
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-xlg-5 col-md-6 offset-md-3"><div class="card">
+                    <div class="col-lg-7 col-xlg-7 col-md-7 offset-md-2"><div class="card">
                             <div class="card-body">
                         <div class="table-responsive">
                                     <table class="table">

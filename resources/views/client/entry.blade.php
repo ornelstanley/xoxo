@@ -23,10 +23,10 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Withdrawal</h3>
+                        <h3 class="text-themecolor">Entry</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Withdraw</li>
+                            <li class="breadcrumb-item active">Entry</li>
                         </ol>
                     </div>
                 </div>
@@ -38,53 +38,44 @@
                 <!-- ============================================================== -->
                 <!-- Row -->
                 <div class="row">
-                    
-                    <a class="btn btn-success bg-white shadow-sm " id="day" href="#" aria-haspopup="true" aria-expanded="false">
+                    <div class="container-fluid pb-3">
+                    <a class="btn btn-light bg-success shadow-sm text" id="day" href="#" aria-haspopup="true" aria-expanded="false">
                         <i class="align-middle mt-n1" data-feather="user-minus"></i> Slots Open
                     </a>
-                      
+                      &nbsp;
                     <a class="btn btn-light bg-white shadow-sm " id="day" href="{{ route('wallet') }}"  aria-haspopup="true" aria-expanded="false">
                         <i class="align-middle mt-n1" data-feather="user-minus"></i>Wallet Balance $ {{ number_format(Auth::user()->balance,2,'.',',') }}
-                    </a>
+                    </a></div>
                                     </div>
                 <div class="row">
                     <!-- Column -->
                     <div class="col-lg-6 col-xlg-5 col-md-6 offset-md-3">
                         <div class="card">
                             <div class="card-body">
-                                <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Join Entry</a>
-                                    </li>
-                                  </ul>
-                                  <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home" 
-                                    role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <div class="">
-                                        <form class="form-horizontal form-material" action="{{route('withdraw') }}"
-                                         method="post">
-                                         @csrf
-                                         <div class="form-group">
-                                            <label for="example-email" class="col-md-12">Entry Level</label>
+                                <div class="">
+                                    <form class="form-horizontal form-material" action="{{route('withdraw') }}"
+                                     method="post">
+                                     @csrf
+                                     <div class="form-group">
+                                        <label for="example-email" class="col-md-12">Entry Level</label>
+                                        <div class="col-md-12">
+                                           <select class="form-control"></select>
+                                        </div>
+                                    </div>
+                                        <div class="form-group">
+                                            <label class="col-md-12">Amount</label>
                                             <div class="col-md-12">
-                                               <select class="form-control"></select>
+                                                <input type="text" placeholder="1000" name="amount" id="amount"
+                                                class="form-control form-control-line">
                                             </div>
                                         </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Amount</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="1000" name="amount" id="amount"
-                                                    class="form-control form-control-line">
-                                                </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <button class="btn btn-success btn-block" type="submit">Join</button>
                                             </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <button class="btn btn-success btn-block" type="submit">Join</button>
-                                                </div>
-                                            </div>
-                                        </form></div></div>
-                                  </div>
+                                        </div>
+                                    </form></div>
                             </div>
                         </div>
                     </div>
