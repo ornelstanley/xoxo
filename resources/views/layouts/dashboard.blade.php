@@ -57,16 +57,17 @@
                 <i class="align-middle" data-feather="settings"></i>
               </a>
 
-							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
-                <img src="dashboard/img/avatars/avatar.jpg" class="avatar img-fluid rounded-circle mr-1" alt="Chris Wood" /> <span class="text-dark">Chris Wood</span>
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown"> 
+								<span class="text-dark">{{ Auth::user()->name}}</span>
+								<span class="badge badge-primary">${{number_format(Auth::user()->balance,2,'.',',')}}</span>
               </a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
 								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="pages-settings.html">Settings & Privacy</a>
-								<a class="dropdown-item" href="#">Help</a>
-								<a class="dropdown-item" href="#">Sign out</a>
+								<a class="dropdown-item" href="mailto:{{ $set->email }}">Help</a>
+								<a class="dropdown-item" href="{{ route('logout') }}">Sign out</a>
 							</div>
 						</li>
 					</ul>
@@ -81,22 +82,16 @@
 						<div class="col-6 text-left">
 							<ul class="list-inline">
 								<li class="list-inline-item">
-									<a class="text-muted" href="#">Support</a>
+									<a class="text-muted" href="mailto:{{ $set->email }}">Support</a>
 								</li>
 								<li class="list-inline-item">
-									<a class="text-muted" href="#">Help Center</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Privacy</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Terms of Service</a>
+									<a class="text-muted" href="{{ route('logout') }}">Logout</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-6 text-right">
 							<p class="mb-0">
-								&copy; 2020 - <a href="index.html" class="text-muted">AppStack</a>
+								&copy; {{ date('Y') }} - <a href="index.html" class="text-muted">Admiral Markets Pro</a>
 							</p>
 						</div>
 					</div>

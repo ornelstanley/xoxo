@@ -18,12 +18,47 @@
 				<ul class="sidebar-nav">
 					
 					<li class="sidebar-item active">
-						<a href="/"  class="sidebar-link">
-                         <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+						<a href="./"  class="sidebar-link">
+                         <i class="align-middle" data-feather="home"></i> <span class="align-middle">Dashboard</span>
               
             </a>
 						
-					</li>		
+					</li>	
+					<li class="sidebar-item active">
+						<a href="{{ route('trader') }}"  class="sidebar-link">
+                         <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Stats</span>
+              
+            </a>
+						
+					</li>	
+					<li class="sidebar-item active">
+						<a href="{{ route('entry') }}"  class="sidebar-link">
+                         <i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Entry</span>
+              
+            </a>
+						
+					</li>
+					<li class="sidebar-item active">
+						<a href="{{ route('wallet') }}"  class="sidebar-link">
+                         <i class="align-middle" data-feather="dollar-sign"></i> <span class="align-middle">Wallet</span>
+              
+            </a>
+						
+					</li>
+					<li class="sidebar-item active">
+						<a href="{{ route('profile') }}"  class="sidebar-link">
+                         <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
+              
+            </a>
+						
+					</li>	
+					<li class="sidebar-item active">
+						<a href="{{ route('logout') }}"  class="sidebar-link">
+                         <i class="align-middle" data-feather="power"></i> <span class="align-middle">Logout</span>
+              
+            </a>
+						
+					</li>
                 		</ul>
 
 				<div class="sidebar-cta">
