@@ -62,8 +62,8 @@
 								<span class="badge badge-primary">${{number_format(Auth::user()->balance,2,'.',',')}}</span>
               </a>
 							<div class="dropdown-menu dropdown-menu-right">
-								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
-								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+								<a class="dropdown-item" href="{{ route('entry') }}"><i class="align-middle mr-1" data-feather="pie-chart"></i> Start Investing</a>
+								<a class="dropdown-item" href="{{ route('wallet') }}"><i class="align-middle mr-1" data-feather="credit-card"></i> Wallet</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="pages-settings.html">Settings & Privacy</a>
 								<a class="dropdown-item" href="mailto:{{ $set->email }}">Help</a>
