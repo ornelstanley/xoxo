@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-3 col-xxl d-flex">
+      <div class="col-12 col-sm-4 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
             <div class="media">
@@ -81,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-3 col-xxl d-flex">
+      <div class="col-12 col-sm-4 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
             <div class="media">
@@ -101,7 +101,7 @@
       </div>
 
       
-      <div class="col-12 col-sm-3 col-xxl d-flex">
+      <div class="col-12 col-sm-4 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
             <div class="media">

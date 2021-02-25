@@ -25,7 +25,7 @@ class WalletController extends Controller
         $deposits = Deposit::whereUserId(Auth::user()->id)->get();
         $withdrawals = Withdrawal::whereUserId(Auth::user()->id)->get();
         $transactions = collect()->concat($deposits)->concat($withdrawals);
-        return view('client.wallet',['transactions'=>$transactions]);
+        return view('client.wallet',['transactions'=>$transactions->sortBy('created_at')]);
     }
     
 }

@@ -38,7 +38,7 @@
                 <!-- ============================================================== -->
                 <!-- Row -->
                 <div class="row">
-                    
+                    <div class="container-fluid pb-3">
 <a class="btn btn-light bg-white shadow-sm " id="day" href="{{ route('withdraw') }}" aria-haspopup="true" aria-expanded="false">
     <i class="align-middle mt-n1" data-feather="user-minus"></i> Withdraw
 </a>
@@ -46,7 +46,7 @@
 <a class="btn btn-light bg-white shadow-sm " id="day" href="{{ route('deposit') }}"  aria-haspopup="true" aria-expanded="false">
     <i class="align-middle mt-n1" data-feather="user-minus"></i> Fund Wallet
 </a>
-                </div>
+                </div></div>
                 <div class="row">
                     <!-- Column -->
                     <div class="col-lg-3 col-xlg-4 col-md-3">
