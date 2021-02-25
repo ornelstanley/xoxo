@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\Trade;
 class EntryController extends Controller
 {
     /**
@@ -20,7 +21,8 @@ class EntryController extends Controller
      */
     public function index()
     {
-        return view('client.entry');
+        $trades = Trade::whereUserId(Auth::user()->id)->get();
+        return view('client.entry',['trades'=>$trades]);
     }
     
 }

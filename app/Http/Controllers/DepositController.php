@@ -41,9 +41,9 @@ class DepositController extends Controller
             $data = array('name'=>Auth::user()->name,'email'=>Auth::user()->email,'created_at'=>date('Y-m-d h:i:s'),'amount'=>$request->amount);
    
               Mail::send('mail.depositmail', $data, function($message) use ($set) {
-                 $message->to($set->email, 'FXCMProtraders')->subject
+                 $message->to($set->email, 'AdmiralMarketsPro')->subject
                     ('New Deposit Request');
-                 $message->from($set->email,'FXCMProtraders');
+                 $message->from($set->email,'AdmiralMarketsPro');
               });
         return back()->with('success', 'Deposit request received, awaiting payment');
     }

@@ -24,7 +24,9 @@ class WithdrawController extends Controller
      */
     public function index()
     {
-        return view('client.withdraw');
+        
+        $withdrawals = Withdrawal::whereUserId(Auth::user()->id)->get();
+        return view('client.withdraw',['withdrawals'=>$withdrawals]);
     }
 
     public function withdrawSubmit(Request $request)
@@ -45,9 +47,9 @@ class WithdrawController extends Controller
         $data = array('name'=>Auth::user()->name,'email'=>Auth::user()->email,'created_at'=>date('Y-m-d h:i:s'),'amount'=>$request->amount);
 
           Mail::send('mail.depositmail', $data, function($message) use ($set) {
-             $message->to($set->email, 'FXCMProtraders')->subject
+             $message->to($set->email, 'AdmiralMarketsPro')->subject
                 ('New Deposit Request');
-             $message->from($set->email,'FXCMProtraders');
+             $message->from($set->email,'AdmiralMarketsPro');
           });
         return back()->with('success', 'Withdrawal received. Under processing!');
             

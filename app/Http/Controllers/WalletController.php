@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\Deposit;
+use App\Models\Withdrawal;
 class WalletController extends Controller
 {
     /**
@@ -20,7 +22,10 @@ class WalletController extends Controller
      */
     public function index()
     {
-        return view('client.wallet');
+        $deposits = Deposit::whereUserId(Auth::user()->id)->get();
+        $withdrawals = Withdrawal::whereUserId(Auth::user()->id)->get();
+        $transactions = collect()->concat($deposits)->concat($withdrawals);
+        return view('client.wallet',['transactions'=>$transactions]);
     }
     
 }
