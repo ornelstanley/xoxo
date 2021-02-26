@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use App\Models\Settings;
 use Auth;
+use Mail;
 
 class ProfileController extends Controller
 {
