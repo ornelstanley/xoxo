@@ -40,6 +40,7 @@ Auth::routes();
 Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => ['auth','verified']], function () {
+    Route::middleware(['hasKyc'])->group(function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/home/changeTrader', [App\Http\Controllers\HomeController::class, 'changeTrader'])->name('change.trader');
 Route::post('/home/reportTrader', [App\Http\Controllers\HomeController::class, 'reportTrader'])->name('report.trader');
@@ -52,8 +53,10 @@ Route::post('/deposit',[App\Http\Controllers\DepositController::class, 'addDepos
 Route::get('/withdraw',[App\Http\Controllers\WithdrawController::class, 'index'])->name('withdraw');
 Route::post('/withdraw',[App\Http\Controllers\WithdrawController::class, 'withdrawSubmit'])->name('withdraw');
 Route::get('/profile',[App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
-Route::post('/profile',[App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('profile');
 Route::get('/support',[App\Http\Controllers\SupportController::class, 'index'])->name('support');
+});
+Route::post('/profile',[App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('profile');
+
 Route::middleware(['isPro'])->group(function () {
 Route::group(['prefix' => 'pro'], function () {
     //for pro trader dashboard

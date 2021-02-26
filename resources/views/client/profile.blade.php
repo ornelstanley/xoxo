@@ -43,7 +43,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         @if(strtolower(Auth::user()->kycStatus) !== 'verified')
-                        <div class="alert alert-warning">To be able to continue with our service, your kyc must be verified</div>
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+                            <div class="alert-message">
+                                <strong>KYC needed!</strong> To be able to continue with our service, your 
+                                kyc must be verified
+                            </div>
+                        </div>
                         @endif
                     </div>
                 </div>
