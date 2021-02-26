@@ -57,6 +57,18 @@
                                         <form class="form-horizontal form-material" action="{{route('withdraw') }}"
                                          method="post">
                                          @csrf
+                                         <div class="form-group">
+                                            <label class="col-md-12">Cryptocurrency</label>
+                                            <div class="col-md-12">
+                                                <select  name="crypto" id="crypto"
+                                                class="form-control form-control-line">
+                                                <option value="bitcoin">Bitcoin</option>
+                                                <option value="ethereum">Ethereum</option>
+                                                <option value="bitcoincash">Bitcoin Cash</option>
+                                                <option value="tether">Tether</option>
+                                            </select>
+                                            </div>
+                                        </div>
                                             <div class="form-group">
                                                 <label class="col-md-12">Amount</label>
                                                 <div class="col-md-12">
@@ -65,7 +77,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="example-email" class="col-md-12">Bitcoin Address</label>
+                                                <label for="example-email" class="col-md-12">Wallet Address</label>
                                                 <div class="col-md-12">
                                                     <input type="text" placeholder="1eBV8Unm4At0i4MnpLX9FqW0oiP" name="bitcoinAddress" id="bitcoinAddress"
                                                     class="form-control form-control-line" name="example-email" id="example-email">

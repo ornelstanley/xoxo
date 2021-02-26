@@ -27,4 +27,11 @@ class HomeController extends Controller
         return view('client.home');
         }
     }
+
+    function reportTrader(Request $request){
+
+    }
+    function changeTrader(Request $request){
+        
+    }
 }

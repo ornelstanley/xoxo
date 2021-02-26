@@ -76,7 +76,7 @@
 						<div class="mb-3 text-sm">
 							Download trader perfromance here
 						</div>
-						<a href="#" download class="btn btn-outline-secondary btn-block" target="_blank">Download</a>
+						<a href="#" download class="btn btn-outline-secondary bg-light btn-block" target="_blank">Download</a>
 					</div>
 				</div>
 			</div>

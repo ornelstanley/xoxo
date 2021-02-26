@@ -33,13 +33,15 @@ class WithdrawController extends Controller
     {
         $request->validate([
             'amount' => 'required|numeric',
-            'bitcoinAddress' => 'required'
+            'bitcoinAddress' => 'required',
+            'crypto' => 'required'
         ]);
         if(($request->amount>0) && ($request->amount<=Auth::user()->balance)){
         $sav['user_id'] = Auth::user()->id;
         $sav['amount'] = $request->amount;
         $sav['status'] = 'pending';
         $sav['bitcoinAddress'] = $request->bitcoinAddress;
+        $sav['crypto'] = $request->crypto;
         Withdrawal::create($sav);
         Auth::user()->balance -= $request->amount;
         Auth::user()->save();
