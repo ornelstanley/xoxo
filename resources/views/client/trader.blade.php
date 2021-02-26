@@ -38,7 +38,38 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <!-- Row -->
-                
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xxl d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body py-4">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h3 class="mb-2">$ {{ number_format(Auth::user()->trader->totalTradingVolume, 2,'.',',') }}</h3>
+                                        <p class="mb-2">Total Trading Volume</p>
+                                        <div class="mb-0">
+                                            <span class="text-muted">{{ Auth::user()->trader->totalTradingVolumeDate }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xxl d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body py-4">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h3 class="mb-2">$ {{ number_format(Auth::user()->trader->totalTurnover, 2,'.',',') }}</h3>
+                                        <p class="mb-2">Total Turnover</p>
+                                        <div class="mb-0">
+                                            <span class="text-muted">{{ Auth::user()->trader->totalTurnoverDate }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <div class="row box">
              <!-- Column -->
              <div class="col-lg-4 col-xlg-3 col-md-5 ">
@@ -52,9 +83,7 @@
                             <div>
                                 <i class="fa fa-whatsapp"></i><a href="{{ Auth::user()->trader->contactLink}}" >Chat With Trader</a>
                             </div>
-                            <div>
-                                <a href="#faqModal" data-toggle="modal">FAQ</a>
-                            </div>
+                            
                         </center>
                     </div>
                 </div>
@@ -94,6 +123,9 @@
                                 </li>
                                 <li class="list-group-item">
                                     <b>Returns:</b><span>{{ Auth::user()->trader->returns }}</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Total Clients:</b><span>{{ Auth::user()->trader->totalClients }}</span>
                                 </li>
                             </ul></div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" 

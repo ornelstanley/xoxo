@@ -12,7 +12,7 @@
   <div class="container-fluid p-0">
 
     <div class="row mb-2 mb-xl-3">
-      <div class="col-auto d-none d-sm-block">
+      <div class="col-auto ml-auto text-left mt-n1">
         <h3><b>Trader:</b>&nbsp;{{Auth::user()->trader->name}}(#{{Auth::user()->trader->uid}})</h3>
       </div>
 
@@ -21,12 +21,18 @@
 <button class="btn btn-light bg-white shadow-sm " id="day"  aria-haspopup="true" aria-expanded="false">
   <i class="align-middle mt-n1" data-feather="user-minus"></i> Change Trader
 </button>
-        <button class="btn btn-primary shadow-sm">
-<i class="align-middle" data-feather="flag">Report Trader&nbsp;</i>
+        <button class="btn btn-primary shadow-sm" aria-haspopup="true" aria-expanded="false"> 
+<i class="align-middle mt-n1" data-feather="flag">Report Trader&nbsp;</i>
 </button>
       </div>
 
     </div>
+    
+    <div class="row">
+      <div class="col-12 col-sm-6 col-xxl d-flex text-right">
+      <h2>
+        <b>Version: {{ $set->version }}</b></h2>
+      </div></div>
     <div class="row">
       <div class="col-12 col-sm-6 col-xxl d-flex">
         <div class="card illustration flex-fill">
@@ -45,6 +51,14 @@
           </div>
         </div>
       </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 col-sm-6 col-xxl d-flex text-right">
+    <button class="btn btn-outline-success">
+      Wallet Balance: $ {{ number_format(Auth::user()->balance,2,'.',',') }}</button> 
+    </div></div>
+    <div class="row">
       <div class="col-12 col-sm-6 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
@@ -63,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-4 col-xxl d-flex">
+      <div class="col-12 col-sm-6 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
             <div class="media">
@@ -81,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-4 col-xxl d-flex">
+      <div class="col-12 col-sm-6 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
             <div class="media">
@@ -101,7 +115,7 @@
       </div>
 
       
-      <div class="col-12 col-sm-4 col-xxl d-flex">
+      <div class="col-12 col-sm-6 col-xxl d-flex">
         <div class="card flex-fill">
           <div class="card-body py-4">
             <div class="media">

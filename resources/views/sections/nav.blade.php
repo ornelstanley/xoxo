@@ -63,11 +63,20 @@
 
 				<div class="sidebar-cta">
 					<div class="sidebar-cta-content">
-						<strong class="d-inline-block mb-2">Investment Plan Brochure</strong>
+						<strong class="d-inline-block mb-2">New Member?</strong>
 						<div class="mb-3 text-sm">
-							You can download our BFQ10 brochure
+							You can download this trader's investment plan
 						</div>
 						<a href="#" download class="btn btn-primary btn-block" target="_blank">Download</a>
+					</div>
+				</div>
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Trader Performance in {{ date('F') }}</strong>
+						<div class="mb-3 text-sm">
+							Download trader perfromance here
+						</div>
+						<a href="#" download class="btn btn-outline-secondary btn-block" target="_blank">Download</a>
 					</div>
 				</div>
 			</div>

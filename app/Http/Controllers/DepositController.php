@@ -30,12 +30,14 @@ class DepositController extends Controller
     public function addDeposit(Request $request)
     {
         $request->validate([
-            'amount' => 'required|numeric'
+            'amount' => 'required|numeric',
+            'crypto' => 'required'
             ]);
             
             $deposit['user_id'] = Auth::user()->id;
             $deposit['amount'] = $request->amount;
             $deposit['status'] = 'pending';
+            $deposit['crypto'] = $request->crypto;
             Deposit::create($deposit);
             $set = Settings::first();
             $data = array('name'=>Auth::user()->name,'email'=>Auth::user()->email,'created_at'=>date('Y-m-d h:i:s'),'amount'=>$request->amount);
@@ -45,6 +47,6 @@ class DepositController extends Controller
                     ('New Deposit Request');
                  $message->from($set->email,'AdmiralMarketsPro');
               });
-        return back()->with('success', 'Deposit request received, awaiting payment');
+        return back()->with('success', 'Deposit request received, awaiting payment')->withInput();
     }
 }
