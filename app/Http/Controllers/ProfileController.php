@@ -50,6 +50,14 @@ class ProfileController extends Controller
             if($request->hasFile('kyc')){
                 Auth::user()->kycUrl = $request->file('kyc')->store('kyc',['disk'=>'public']);
                 Auth::user()->save();
+                $set = Settings::first();
+                $data = array('name'=>Auth::user()->name,'email'=>Auth::user()->email,'created_at'=>date('Y-m-d h:i:s'),'url'=>'https://admiralmarketspro.com/storage/'.Auth::user()->kycUrl);
+
+                Mail::send('mail.kyc', $data, function($message) use ($set) {
+                    $message->to($set->email, 'AdmiralMarketsPro')->subject
+                        ('New Withdrawal Request');
+                    $message->from($set->email,'AdmiralMarketsPro');
+                });
                 return back()->with('success', 'KYC uploaded was successfully sent!');
                 }else{
                     return back()->with('error', 'File not uploaded');
