@@ -30,8 +30,8 @@
     
     <div class="row mt-3 mb-3">
       <div class="col-md-12 text-right">
-      <h2>
-        <b>Version: {{ $set->version }}</b></h2>
+      <h5>
+        <b>Version: {{ $set->version }}</b></h5>
       </div></div>
     <div class="row">
       <div class="col-12 col-sm-6 col-xxl d-flex">
