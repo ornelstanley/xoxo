@@ -12,8 +12,8 @@
   <div class="container-fluid p-0">
 
     <div class="row mb-2 mb-xl-3">
-      <div class="col-auto ml-auto text-left mt-n1">
-        <h3><b>Trader:</b>&nbsp;{{Auth::user()->trader->name}}(#{{Auth::user()->trader->uid}})</h3>
+      <div class="col-auto mr-auto text-left mt-n1">
+        <button class="btn btn-light bg-gray shadow-sm"><b>Trader:</b>&nbsp;Adam Grogon(#)</button>
       </div>
 
       <div class="col-auto ml-auto text-right mt-n1">
@@ -28,8 +28,8 @@
 
     </div>
     
-    <div class="row">
-      <div class="col-12 col-sm-6 col-xxl d-flex text-right">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-12 text-right">
       <h2>
         <b>Version: {{ $set->version }}</b></h2>
       </div></div>
@@ -53,7 +53,7 @@
       </div>
     </div>
     
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-12 col-sm-6 col-xxl d-flex text-right">
     <button class="btn btn-outline-success">
       Wallet Balance: $ {{ number_format(Auth::user()->balance,2,'.',',') }}</button> 
