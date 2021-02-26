@@ -40,11 +40,11 @@
                 <div class="row">
                     <div class="container-fluid pb-3">
                     <a class="btn btn-light bg-{{ $set->slotOpen ? 'success' : 'danger' }} shadow-sm text" id="day" href="#" aria-haspopup="true" aria-expanded="false">
-                        <i class="align-middle mt-n1" data-feather="user-minus"></i> Slots {{ $set->slotOpen ? 'Open' : 'Closed'}}
+                         Slots {{ $set->slotOpen ? 'Open' : 'Closed'}}
                     </a>
                       &nbsp;
                     <a class="btn btn-light bg-white shadow-sm " id="day" href="{{ route('wallet') }}"  aria-haspopup="true" aria-expanded="false">
-                        <i class="align-middle mt-n1" data-feather="user-minus"></i>Wallet Balance $ {{ number_format(Auth::user()->balance,2,'.',',') }}
+                        <i class="fa fa-wallet"></i>Wallet Balance $ {{ number_format(Auth::user()->balance,2,'.',',') }}
                     </a></div>
                                     </div>
                 <div class="row">
