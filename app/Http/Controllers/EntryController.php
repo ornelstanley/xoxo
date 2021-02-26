@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Models\Trade;
+use App\Models\Settings;
 class EntryController extends Controller
 {
     /**
@@ -27,9 +28,11 @@ class EntryController extends Controller
     
     public function postCreateNewUserTrade(Request $request, $id)
     {
+        
+        $set = Settings::first();
         if($request->amount > 0){
         if(Auth::user()->balance >= $request->amount){
-            if($settings->slotOpen){
+            if($set->slotOpen){
                 $trade['user_id'] = $id;
                 $trade['trader_id'] = $request->trader;
                 $trade['amount'] = $request->amount;

@@ -41,8 +41,8 @@ Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => ['auth','verified']], function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::post('/home', [App\Http\Controllers\HomeController::class, 'changeTrader'])->name('change.trader');
-Route::post('/home', [App\Http\Controllers\HomeController::class, 'reportTrader'])->name('report.trader');
+Route::post('/home/changeTrader', [App\Http\Controllers\HomeController::class, 'changeTrader'])->name('change.trader');
+Route::post('/home/reportTrader', [App\Http\Controllers\HomeController::class, 'reportTrader'])->name('report.trader');
 Route::get('/trader',[App\Http\Controllers\TraderController::class, 'index'])->name('trader');
 Route::get('/entry',[App\Http\Controllers\EntryController::class, 'index'])->name('entry');
 Route::post('/entry', [App\Http\Controllers\AdminController::class, 'createNewUserTrade'])->name('entry');
