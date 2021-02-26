@@ -41,6 +41,13 @@
                 <!-- ============================================================== -->
                 <!-- Row -->
                 <div class="row">
+                    <div class="col-md-6">
+                        @if(strtolower(Auth::user()->kycStatus) !== 'verified')
+                        <div class="alert alert-warning">To be able to continue with our service, your kyc must be verified</div>
+                        @endif
+                    </div>
+                </div>
+                <div class="row">
                     <!-- Column -->
                     <div class="col-lg-4 col-xlg-3 col-md-5 ">
                         <div class="card">

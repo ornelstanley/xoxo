@@ -7,7 +7,9 @@
 @endif
 @endsection
 @section('content')
-
+@php
+    $token = csrf_token();
+@endphp
 <main class="content">
   <div class="container-fluid p-0">
 
@@ -151,6 +153,7 @@
       </div>
       <div class="modal-body m-3">
         <form method="post" action="{{ route('change.trader')}}">
+          <input type="hidden" name="_token" value="{{$token}}" /> 
           <div class="form-group">
             <label class="form-label">Trader ID</label>
             <input type="text" class="form-control" required placeholder="Trader ID" name="trader_id"></textarea>
@@ -187,6 +190,7 @@
           </div>
         </div>
         <form method="post" action="{{ route('report.trader')}}">
+          <input type="hidden" name="_token" value="{{$token}}" /> 
           <div class="form-group">
           <label class="form-label">Reason</label>
           <textarea class="form-control" rows="2" placeholder="Reason" name="reason" required></textarea>

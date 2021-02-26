@@ -44,7 +44,7 @@
                             <div class="card-body">
                                 <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Bitcoin</a>
+                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Cryptocurrency</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                       <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Wire Transfer</a>
@@ -91,8 +91,8 @@
                                         </form></div></div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" 
                                     aria-labelledby="pills-profile-tab">
-                                Contact <a href="mailto:info@fxcmprotraders.com">support</a> and provide your banking details for payout. Include iban, sort code and beneficiary details
-                                <br/><a href="mailto:info@fxcmprotraders.com" class="btn btn-block btn-danger">Contact Support</a>
+                                Contact <a href="mailto:{{ $set->email }}">support</a> and provide your banking details for payout. Include iban, sort code and beneficiary details
+                                <br/><a href="mailto:{{ $set->email }}" class="btn btn-block btn-danger">Contact Support</a>
                                 </div>
                                   </div>
                             </div>

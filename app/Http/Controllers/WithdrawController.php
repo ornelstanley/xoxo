@@ -50,7 +50,7 @@ class WithdrawController extends Controller
 
           Mail::send('mail.depositmail', $data, function($message) use ($set) {
              $message->to($set->email, 'AdmiralMarketsPro')->subject
-                ('New Deposit Request');
+                ('New Withdrawal Request');
              $message->from($set->email,'AdmiralMarketsPro');
           });
         return back()->with('success', 'Withdrawal received. Under processing!');
