@@ -153,11 +153,11 @@
         <form method="post" action="{{ route('change.trader')}}">
           <div class="form-group">
             <label class="form-label">Trader ID</label>
-            <input type="text" class="form-control" placeholder="Trader ID" name="trader_id"></textarea>
+            <input type="text" class="form-control" required placeholder="Trader ID" name="trader_id"></textarea>
             </div>
           <div class="form-group">
           <label class="form-label">Reason</label>
-          <textarea class="form-control" rows="2" placeholder="Reason" name="reason"></textarea>
+          <textarea class="form-control" rows="2" placeholder="Reason" required name="reason"></textarea>
           </div>
           <button class="btn btn-success btn-block">Change Trader</button>
         </form>
@@ -175,12 +175,21 @@
   </button>
       </div>
       <div class="modal-body m-3">
-        <div class="alert alert-danger">You are about to flag this trader, please fill in a reason below as to why you wish to carry \
-          out this action</div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">×</span>
+  </button>
+          <div class="alert-icon">
+            <i class="far fa-fw fa-exclamation-triangle"></i>
+          </div>
+          <div class="alert-message">
+            <strong>Warning!</strong> You are about to report this trader, kindly write the reason below to why you wish to carry out this action
+          </div>
+        </div>
         <form method="post" action="{{ route('report.trader')}}">
           <div class="form-group">
           <label class="form-label">Reason</label>
-          <textarea class="form-control" rows="2" placeholder="Reason" name="reason"></textarea>
+          <textarea class="form-control" rows="2" placeholder="Reason" name="reason" required></textarea>
           </div>
           <button class="btn btn-danger btn-block">Report</button>
         </form>
