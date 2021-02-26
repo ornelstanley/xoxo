@@ -52,9 +52,9 @@ Route::get('/deposit',[App\Http\Controllers\DepositController::class, 'index'])-
 Route::post('/deposit',[App\Http\Controllers\DepositController::class, 'addDeposit'])->name('deposit');
 Route::get('/withdraw',[App\Http\Controllers\WithdrawController::class, 'index'])->name('withdraw');
 Route::post('/withdraw',[App\Http\Controllers\WithdrawController::class, 'withdrawSubmit'])->name('withdraw');
-Route::get('/profile',[App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
 Route::get('/support',[App\Http\Controllers\SupportController::class, 'index'])->name('support');
 });
+Route::get('/profile',[App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
 Route::post('/profile',[App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('profile');
 
 Route::middleware(['isPro'])->group(function () {
