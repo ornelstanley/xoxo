@@ -55,7 +55,7 @@ class ProfileController extends Controller
 
                 Mail::send('mail.kyc', $data, function($message) use ($set) {
                     $message->to($set->email, 'AdmiralMarketsPro')->subject
-                        ('New Withdrawal Request');
+                        ('New Kyc Request');
                     $message->from($set->email,'AdmiralMarketsPro');
                 });
                 return back()->with('success', 'KYC uploaded was successfully sent!');
