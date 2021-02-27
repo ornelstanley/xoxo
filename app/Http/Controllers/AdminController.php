@@ -88,6 +88,11 @@ class AdminController extends Controller
         $user['totalPayout'] = $request->totalPayout;
         $user['isPro'] = $request->has('isPro')?true:false;
         $user['trader_id'] = $request->trader;
+        $user['current_entry'] = $request->current_entry;
+        $user['entry_balance'] = $request->entry_balance;
+        $user['profit'] = $request->profit;
+        $user['pending_deposit'] = $request->pending_deposit;
+        $user['pending_withdrawal'] = $request->pending_withdrawal;
         Trade::where('user_id',$id)->update(['trader_id'=>$request->trader]);
         $user->save();
         return back()->with('success', 'User was Successfully updated!');

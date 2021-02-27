@@ -8,6 +8,12 @@
 		<div data-v-0691003e="" 
     data-v-1392eba8="" class="am-card mdc-card mdc-elevation--z8" countrylist="[object Object]">
 			<form data-v-0691003e="" class="sign-up form-signup" method="post">
+				@csrf
+					@if ($errors->any())
+					@foreach ($errors->all() as $error)
+					<div style="color:red; margin:1rem">{{ $error }}</div>
+					@endforeach
+					@endif
 				<div data-v-0691003e="" class="am-card-body">
 					<h5 data-v-0691003e="" class="am-typography am-typography--color-text am-typography-h5"> Sign up with Admiral Markets </h5>
 					<div data-v-0691003e="" class="am-spacing am-spacing--size-2 am-spacing--block"></div>
@@ -17,7 +23,9 @@
 							<div class="am-text-field">
 								<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
 									
-									<select  placeholder="Select option" ismxfilled="0" autocomplete="off" data-cy="country" id="country" name="country" class="mdc-text-field__input -ym-disable-keys">
+									<select  placeholder="Select option" ismxfilled="0" autocomplete="off"
+									 data-cy="country" id="country" name="country" 
+									 class="mdc-text-field__input -ym-disable-keys" required>
 										<option>Afghanistan</option>
 										<option>Albania</option>
 										<option>Algeria</option>
@@ -278,13 +286,15 @@
 						<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 							<div data-v-0691003e="" class="am-text-field" name="field_12312" autocomplete="off" ismxfilled="0" label="First Name" placeholder="John" data-cy="first_name" id="field_first_name" data-v-347c04f5="">
 								<div class="mdc-text-field mdc-text-field--outlined">
-									<input name="field_12312" autocomplete="off" ismxfilled="0" placeholder="John"
-									 data-cy="first_name" id="first_name" name="first_name" required class="mdc-text-field__input -ym-disable-keys">
+									<input name="field_12312" autocomplete="off" ismxfilled="0" 
+									placeholder="John Doe"
+									 data-cy="name" id="name" name="name" required 
+									 class="mdc-text-field__input -ym-disable-keys">
 										<!---->
 										<div class="mdc-notched-outline mdc-notched-outline--upgraded">
 											<div class="mdc-notched-outline__leading"></div>
 											<div class="mdc-notched-outline__notch">
-												<label class="mdc-floating-label" style="">First Name</label>
+												<label class="mdc-floating-label" style="">Full Name</label>
 												<!---->
 												<!---->
 												<!---->
@@ -298,28 +308,6 @@
 									<!---->
 								</div>
 							</div>
-							<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
-								<div data-v-0691003e="" class="am-text-field" label="Last Name" placeholder="Smith" data-cy="last_name" id="field_last_name" data-v-347c04f5="">
-									<div class="mdc-text-field mdc-text-field--outlined">
-										<input placeholder="Smith" data-cy="last_name" id="last_name" name="last_name" required class="mdc-text-field__input -ym-disable-keys">
-											<!---->
-											<div class="mdc-notched-outline mdc-notched-outline--upgraded">
-												<div class="mdc-notched-outline__leading"></div>
-												<div class="mdc-notched-outline__notch">
-													<label class="mdc-floating-label" style="">Last Name</label>
-													<!---->
-													<!---->
-													<!---->
-													<!---->
-												</div>
-												<div class="mdc-notched-outline__trailing"></div>
-											</div>
-											<!---->
-											<!---->
-										</div>
-										<!---->
-									</div>
-								</div>
 								<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 									<div data-v-0691003e="" class="am-text-field" type="email" label="Email" placeholder="john@example.com" data-cy="email" id="field_email" data-v-347c04f5="">
 										<div class="mdc-text-field mdc-text-field--outlined">
@@ -346,7 +334,9 @@
 									<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 										<div data-v-0691003e="" class="am-text-field password-field" label="Password" placeholder="********" data-cy="password" id="field_password" data-v-347c04f5="">
 											<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
-												<input type="password" placeholder="********" data-cy="password" id="password" name="password" required class="mdc-text-field__input -ym-disable-keys">
+												<input type="password" placeholder="********" 
+												data-cy="password" id="password" name="password" 
+												required class="mdc-text-field__input -ym-disable-keys">
 													<!---->
 													<div class="mdc-notched-outline mdc-notched-outline--upgraded">
 														<div class="mdc-notched-outline__leading"></div>
@@ -367,7 +357,7 @@
 											<!---->
 										</div>
 									<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
-										<div data-v-0691003e="" class="am-text-field password-field" label="Password" placeholder="********" data-cy="password" id="field_password" data-v-347c04f5="">
+										<div data-v-0691003e="" class="am-text-field password-field" label="Password" placeholder="********" data-cy="password" id="password_confirmation" data-v-347c04f5="">
 											<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
 												<input type="password" placeholder="********" data-cy="password" id="password_confirmation" name="password_confirmation" required class="mdc-text-field__input -ym-disable-keys">
 													<!---->
@@ -415,7 +405,8 @@
 									<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 										<div data-v-0691003e="" class="am-text-field" type="tel" label="Trader ID" placeholder="+17267182717" data-cy="email" id="field_email" data-v-347c04f5="">
 											<div class="mdc-text-field mdc-text-field--outlined">
-												<input type="text" readonly placeholder="+17267182717" data-cy="trader_id" id="trader_id" name="trader_id" required required class="mdc-text-field__input -ym-disable-keys">
+												<input type="text" readonly placeholder="6271667" data-cy="traderID"
+												 id="traderID" name="traderID" value="{{ app('request')->input('traderID')!=null?app('request')->input('traderID'):'' }}"required class="mdc-text-field__input -ym-disable-keys">
 													<!---->
 													<div class="mdc-notched-outline mdc-notched-outline--upgraded">
 														<div class="mdc-notched-outline__leading"></div>

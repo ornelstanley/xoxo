@@ -80,6 +80,39 @@
                                                      class="form-control form-control-line">
                                                 </div>
                                             </div>
+                                            <div>
+                                                <img src="{{ asset("storage/$user->kycUrl") }}" class="img-responsive" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12">Current Entry</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" value="{{$user->current_entry}}" id="current_entry" name="current_entry" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12">Entry Balance</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" value="{{$user->entry_balance}}" id="entry_balance" name="entry_balance" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                             <div class="form-group">
+                                                <label class="col-md-12">Profit</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" value="{{$user->profit}}" id="current_entry" name="current_entry" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12">Pending Deposit</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" value="{{$user->pending_deposit}}" id="pending_deposit" name="pending_deposit" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                             <div class="form-group">
+                                                <label class="col-md-12">Pending Withdrawal</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" value="{{$user->pending_withdrawal}}" id="pending_withdrawal" name="pending_withdrawal" class="form-control form-control-line">
+                                                </div>
+                                            </div>
                                             <div class="form-group">
                                                 <label class="col-md-12">Total Invested</label>
                                                 <div class="col-md-12">
@@ -131,9 +164,6 @@
                                                 </div>
                                             </div>
                                         </form></div>
-                                        <div>
-                                            <img src="{{ asset("storage/$user->kycUrl") }}" class="img-responsive" />
-                                        </div>
                             </div>
                         </div>
                     </div>

@@ -16,7 +16,7 @@ use App\Models\Trader;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
 
 Route::get('/about',function(){
     return view('about');

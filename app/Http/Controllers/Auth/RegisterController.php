@@ -50,6 +50,7 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -58,7 +59,14 @@ class RegisterController extends Controller
             'country' => ['required'],
             'phone_no' => ['required'],
             'traderID' => ['required']
-        ]);
+        ])->after(function ($validator){
+          $trader = Trader::where('uid',$data['traderID'])->first();
+            if($trader==null){
+                $validator->errors()->add(
+                    'trader', 'Trader not found'
+                );
+            }
+        });
     }
 
     /**
@@ -69,6 +77,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $trader = Trader::where('uid',$data['traderID'])->first();
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -79,7 +89,9 @@ class RegisterController extends Controller
             'balance' => 0.0,
             'totalInvested' => 0.0,
             'totalPayout' => 0.0,
-            'trader_id' => $data['traderID'],
+            'trader_id' => $trader->id,
+            'savings' => $data['savings'],
+            'investment_type' => $data['investment_type'],
             'referralCode' => Str::random(6),
             'referrerCode' => $data['referrerCode']
         ]);

@@ -31,7 +31,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- END SETTINGS --> 
 	<link href="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha256-R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=" >
-
+	@yield('head')
 </head>
 <!--
   HOW TO USE: 
