@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-GB"
-      class="no-js"
-      dir="">
+<html >
 
 <!-- Mirrored from admiralmarkets.com/signup by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 11:24:15 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
@@ -34,10 +32,6 @@
 
     <link rel="preconnect"
           href="http://dce5jani6jm7e.cloudfront.net/">
-    <link rel="dns-prefetch"
-          href="https://admiralmarkets.com/">
-    <link rel="manifest"
-          href="https://admiralmarkets.com/manifest.webmanifest">
     <link rel="shortcut icon"
           href="https://dce5jani6jm7e.cloudfront.net/images/public/favicon.ico"
           type="image/x-icon"/>

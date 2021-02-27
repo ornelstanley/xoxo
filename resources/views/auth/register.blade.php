@@ -3,7 +3,6 @@
 @section('content')
 
 <div class="signup-page__form">
-	<script src="https://dce5jani6jm7e.cloudfront.net/app/modules/sentry/js/sentry.js"></script>
 	<div data-v-1392eba8="" class="signup-single">
 		<div data-v-0691003e="" 
     data-v-1392eba8="" class="am-card mdc-card mdc-elevation--z8" countrylist="[object Object]">
