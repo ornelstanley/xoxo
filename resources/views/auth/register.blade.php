@@ -17,27 +17,7 @@
 					<h5 data-v-0691003e="" class="am-typography am-typography--color-text am-typography-h5"> Sign up with Admiral Markets </h5>
 					<div data-v-0691003e="" class="am-spacing am-spacing--size-2 am-spacing--block"></div>
 					<!---->
-					<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
-						<div data-v-0691003e="" class="am-text-field" label="Last Name" placeholder="Smith" 
-						data-cy="last_name" id="field_last_name" data-v-347c04f5="">
-						<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon 
-						mdc-text-field--invalid"> <input placeholder="Smith" data-cy="last_name" id="field_last_name"
-						 class="mdc-text-field__input -ym-disable-keys"> <!----> 
-						 <div class="mdc-notched-outline mdc-notched-outline--upgraded">
-							 <div class="mdc-notched-outline__leading"></div>
-							  <div class="mdc-notched-outline__notch" style="">
-								  <label class="mdc-floating-label" style="">Last Name</label>
-								   <!----> <!---->  <!----></div> <div class="mdc-notched-outline__trailing"></div>
-								  </div> <!----> 
-								  <i tabindex="-2" class="mdc-text-field__icon error-icon material-icons 
-								  am-typography--color-inherit">error_outline</i> <!----></div> 
-								  <div class="mdc-text-field-helper-line">
-									  <div aria-hidden="true" 
-									  class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
-					  Last Name field cannot be left blank
-					</div> 
-				  </div></div></div>
-				  
+					
 					<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 						<div data-v-0691003e="" class="mdc-menu-surface--anchor am-autocomplete" data-v-347c04f5="">
 							<div class="am-text-field">
@@ -445,70 +425,7 @@
 												<!---->
 											</div>
 										</div>
-                                  
-										<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
-											<div data-v-0691003e="" class="mdc-menu-surface--anchor am-autocomplete" data-v-347c04f5="">
-												<div class="am-text-field">
-													<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
-														
-														<select  placeholder="Select option"  ismxfilled="0" autocomplete="off" data-cy="investment_type" id="investment_type" name="investment_type" class="mdc-text-field__input -ym-disable-keys">
-															
-														</select>
-														<!---->
-															<div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
-																<div class="mdc-notched-outline__leading"
-												></div>
-																<div class="mdc-notched-outline__notch" style="width: 50.75px;">
-																	<label class="mdc-floating-label mdc-floating-label--float-above" style="">Investment Type</label>
-																	<!---->
-																	<!---->
-																	<!---->
-																</div>
-																<div class="mdc-notched-outline__trailing"></div>
-															</div>
-															<!---->
-															<i tabindex="-2" class="mdc-text-field__icon error-icon material-icons am-typography--color-inherit" role="button">arrow_drop_down</i>
-															<!---->
-														</div>
-														<!---->
-													</div>
-													<div class="mdc-menu mdc-menu-surface" style="width: 500px;"></div>
-												</div>
-											</div>
-										
-														
-									
-											<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
-												<div data-v-0691003e="" class="mdc-menu-surface--anchor am-autocomplete" data-v-347c04f5="">
-													<div class="am-text-field">
-														<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
-															
-															<select  placeholder="Select option"  ismxfilled="0" autocomplete="off" data-cy="savings" id="savings" name="savings" class="mdc-text-field__input -ym-disable-keys">
-																
-															</select>
-															<!---->
-																<div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
-																	<div class="mdc-notched-outline__leading"
-													></div>
-																	<div class="mdc-notched-outline__notch" style="width: 50.75px;">
-																		<label class="mdc-floating-label mdc-floating-label--float-above" style="">Savings</label>
-																		<!---->
-																		<!---->
-																		<!---->
-																	</div>
-																	<div class="mdc-notched-outline__trailing"></div>
-																</div>
-																<!---->
-																<i tabindex="-2" class="mdc-text-field__icon error-icon material-icons am-typography--color-inherit" role="button">arrow_drop_down</i>
-																<!---->
-															</div>
-															<!---->
-														</div>
-														<div class="mdc-menu mdc-menu-surface" style="width: 500px;"></div>
-													</div>
-												</div>
-
-										
+                                  		
 									<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 										<div data-v-0691003e="" class="am-text-field" type="tel" label="Trader ID" placeholder="+17267182717" data-cy="email" id="field_email" data-v-347c04f5="">
 											<div class="mdc-text-field mdc-text-field--outlined">

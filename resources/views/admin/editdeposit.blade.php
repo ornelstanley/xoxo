@@ -49,6 +49,13 @@
                                     </div>
                                    
                                     <div class="form-group">
+                                        <label class="col-md-12">Cryptocurrency</label>
+                                        <div class="col-md-12">
+                                            <input type="text" name="crypto" id="crypto" value="{{$deposit->amount}}" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label class="col-md-12">Status</label>
                                         <div class="col-md-12">
                                             <input type="text" name="status" id="status" value="{{$deposit->status}}" class="form-control form-control-line">

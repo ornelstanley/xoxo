@@ -58,6 +58,17 @@
                                         @if(!session()->has('success'))
                                         <form class="form-horizontal form-material" action="{{route('deposit') }}"
                                          method="post">
+                                         <div class="alert alert-danger alert-outline-coloured alert-dismissible" role="alert">
+											<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+											<div class="alert-icon">
+												<i class="far fa-fw fa-bell"></i>
+											</div>
+											<div class="alert-message">
+												<strong>Notice!</strong> While using cryptocurrency as a means of payment, always ensure that you only make payment to the encrypted address provided by Admiral market. Admiral market WILL NOT BE HELD RESPONSIBLE for any personal transaction with trader outside this platform.
+                                            </div>
+										</div>
                                          @csrf
                                          
                                          <div class="form-group">

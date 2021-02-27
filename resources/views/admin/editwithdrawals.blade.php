@@ -48,7 +48,15 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Bitcoin Address</label>
+                                        <label class="col-md-12">Crypto</label>
+                                        <div class="col-md-12">
+                                            <input type="text" name="crypto" id="crypto" 
+                                            value="{{$withdrawal->crypto}}" 
+                                            class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-12">Wallet Address</label>
                                         <div class="col-md-12">
                                             <input type="text" name="bitcoinAddress" id="bitcoinAddress" value="{{$withdrawal->bitcoinAddress}}" 
                                             class="form-control form-control-line">

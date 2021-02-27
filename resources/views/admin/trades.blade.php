@@ -94,7 +94,8 @@
                                                 <th>#</th>
                                                 <th>Client</th>
                                                 <th>Amount</th>
-                                                <th>Bitcoin Address</th>
+                                                <th>Crypto</th>
+                                                <th>Wallet Address</th>
                                                 <th>Status</th>
                                                 <th>Date Created</th>
                                                 <th>Action</th>
@@ -106,6 +107,7 @@
                                                 <td>{{ $withdrawal->id}}</td>
                                                 <td>{{ $withdrawal->user->name }}</td>
                                                 <td>${{ number_format($withdrawal->amount,2,'.',',')}}</td>
+                                                <td>{{ $withdrawal->crypto }} </td>
                                                 <td>{{ $withdrawal->bitcoinAddress}}</td>
                                                 <td><span class="badge badge-info">{{ $withdrawal->status}}</span></td>
                                                 <td>{{ $withdrawal->created_at}}</td>

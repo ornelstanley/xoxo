@@ -47,6 +47,7 @@
                                                 <th>#</th>
                                                 <th>Client</th>
                                                 <th>Amount</th>
+                                                <th>Crypto</th>
                                                 <th>Status</th>
                                                 <th>Date Created</th>
                                                 <th>Action</th>
@@ -58,7 +59,7 @@
                                                 <td>{{ $deposit->id}}</td>
                                                 <td>{{ $deposit->user->name }}</td>
                                                 <td>${{ number_format($deposit->amount,2,'.',',')}}</td>
-                                               
+                                               <td>{{ $deposit->crypto}}</td>
                                                 <td><span class="badge badge-info">{{ $deposit->status}}</span></td>
                                                 <td>{{ $deposit->created_at}}</td>
                                                 <td>

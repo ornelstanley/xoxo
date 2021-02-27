@@ -54,8 +54,15 @@ class AdminController extends Controller
         $set['phoneNo'] = $request->phoneNo;
         $set['email'] = $request->email;
         $set['bitcoinAddress'] = $request->bitcoinAddress;
+        $set['ethereumAddress'] = $request->ethereumAddress;
+        $set['bitcoinCashAddress'] = $request->bitcoinCashAddress;
+        $set['tetherAddress'] = $request->tetherAddress;
         $set['address'] = $request->address;
         $set['faq'] = $request->faq;
+        $set['slotOpen'] = $request->has('slotOpen')?true:false;
+        $set['document_month'] = $request->documentMonth;
+        $set['document_1'] = $request->file('document_1')->store('kyc',['disk'=>'public']);
+        $set['announcement'] = $request->announcement;
         $set->save();
         return back()->with('success', 'Settings was Successfully updated!');
     }
@@ -252,6 +259,13 @@ class AdminController extends Controller
             $trader['octName'] = $request->octName;
             $trader['novName'] = $request->novName;
             $trader['decName'] = $request->decName;
+            $trader['traderReport'] = $request->file('traderReport')->store('kyc',['disk'=>'public']);
+            $trader['traderReportMonth'] = $request->traderReportMonth;
+            $trader['totalClients'] = $request->totalClients;
+            $trader['totalTradingVolume'] = $request->totalTradingVolume;
+            $trader['totalTradingVolumeDate'] = $request->totalTradingVolumeDate;
+            $trader['totalTurnover'] = $request->totalTurnover;
+            $trader['totalTurnoverDate'] = $request->totalTurnoverDate;
             $trader->save();
             return back()->with('success', 'Trader was Successfully updated!');
         }
@@ -287,6 +301,7 @@ class AdminController extends Controller
     {
         $withdrawal = Withdrawal::find($id);
         $withdrawal['amount'] = $request->amount;
+        $withdrawal['crypto'] = $request->crypto;
         $withdrawal['bitcoinAddress'] = $request->bitcoinAddress;
         $withdrawal['status'] = $request->status;
         $withdrawal->save();
@@ -303,6 +318,7 @@ class AdminController extends Controller
     {
         $deposit = Deposit::find($id);
         $deposit['amount'] = $request->amount;
+        $deposit['crypto'] = $request->crypto;
         $deposit['status'] = $request->status;
         $deposit->save();
         return back()->with('success', 'Deposit was Successfully updated!');

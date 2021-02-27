@@ -127,6 +127,69 @@
                                                     <input type="text" name="uid" id="uid" value="{{$trader->uid}}" class="form-control form-control-line">
                                                 </div>
                                             </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-12">Report Document</label>
+                                                <div class="col-md-12">
+                                                    <input type="file" name="traderReport" id="traderReport" 
+                                                    class="form-control form-control-line">
+                                                </div>
+                                                @if($trader->traderReport != null)	
+                                                
+                                                        <a href="{{ asset("public/storage/$trader->traderReport") }}"  
+                                                            class="btn btn-primary btn-block" target="_blank">View</a>
+                                                    
+                                                @endif
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-12">Report Month</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" name="reportMonth" id="reportMonth" 
+                                                    value="{{$trader->reportMonth}}" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-12">Total Clients</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" name="totalClients" id="totalClients" 
+                                                    value="{{$trader->totalClients}}" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-12">Total Trading Volume</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" name="totalTradingVolume" id="totalTradingVolume" 
+                                                    value="{{$trader->totalTradingVolume}}" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-12">Total Trading Volume Date</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" name="totalTradingVolumeDate" id="totalTradingVolumeDate" 
+                                                    value="{{$trader->totalTradingVolumeDate}}" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-12">Total Turnover</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" name="totalTurnover" id="totalTurnover" 
+                                                    value="{{$trader->totalTurnover}}" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-12">Total Turnover Date</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" name="totalTurnoverDate" id="totalTurnoverDate" 
+                                                    value="{{$trader->totalTurnoverDate}}" class="form-control form-control-line">
+                                                </div>
+                                            </div>
+                                            
                                             <div class="form-group">
                                                 <div class="col-sm-12">
                                                     <button class="btn btn-success btn-block"  type="submit" name="form1">Update</button>

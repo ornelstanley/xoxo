@@ -43,7 +43,9 @@
               <div class="col-6">
                 <div class="illustration-text p-3 m-1">
                   <h4 class="illustration-text">Welcome {{ Auth::user()->name}}</h4>
-                  <p class="mb-0">This is announcement area</p>
+                  <div class="mb-0">
+                        {{ $set->announcement }}
+                  </div>
                 </div>
               </div>
               <div class="col-6 align-self-end text-right">
@@ -122,7 +124,7 @@
           <div class="card-body py-4">
             <div class="media">
               <div class="media-body">
-                <h3 class="mb-2">$ {{ Auth::user()->profit }}</h3>
+                <h3 class="mb-2">{{ Auth::user()->profit }}</h3>
                 <p class="mb-2">Profit</p>
                
               </div>

@@ -60,24 +60,27 @@
 						
 					</li>
                 		</ul>
-
+			 @if($set->document_1 != null)	
 				<div class="sidebar-cta">
 					<div class="sidebar-cta-content">
 						<strong class="d-inline-block mb-2">New Member?</strong>
 						<div class="mb-3 text-sm">
 							You can download this trader's investment plan
 						</div>
-						<a href="#" download class="btn btn-primary btn-block" target="_blank">Download</a>
+						<a href="{{ asset("public/storage/$set->document_1") }}" download class="btn btn-primary btn-block" target="_blank">Download</a>
 					</div>
 				</div>
+				@endif
+				@if(Auth::user()->trader->traderReport != null)
 				<div class="sidebar-cta">
 					<div class="sidebar-cta-content">
-						<strong class="d-inline-block mb-2">Trader Performance in {{ date('F') }}</strong>
+						<strong class="d-inline-block mb-2">Trader Performance in {{ Auth::user()->trader->traderReportMonth }}</strong>
 						<div class="mb-3 text-sm">
 							Download trader perfromance here
 						</div>
-						<a href="#" download class="btn btn-outline-secondary bg-light btn-block" target="_blank">Download</a>
+						<a href="{{ asset("public/storage/".Auth::user()->trader->traderReport) }}" download class="btn btn-outline-secondary bg-light btn-block" target="_blank">Download</a>
 					</div>
 				</div>
+				@endif
 			</div>
 		</nav>
