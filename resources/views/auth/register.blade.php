@@ -18,6 +18,27 @@
 					<div data-v-0691003e="" class="am-spacing am-spacing--size-2 am-spacing--block"></div>
 					<!---->
 					<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
+						<div data-v-0691003e="" class="am-text-field" label="Last Name" placeholder="Smith" 
+						data-cy="last_name" id="field_last_name" data-v-347c04f5="">
+						<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon 
+						mdc-text-field--invalid"> <input placeholder="Smith" data-cy="last_name" id="field_last_name"
+						 class="mdc-text-field__input -ym-disable-keys"> <!----> 
+						 <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+							 <div class="mdc-notched-outline__leading"></div>
+							  <div class="mdc-notched-outline__notch" style="">
+								  <label class="mdc-floating-label" style="">Last Name</label>
+								   <!----> <!---->  <!----></div> <div class="mdc-notched-outline__trailing"></div>
+								  </div> <!----> 
+								  <i tabindex="-2" class="mdc-text-field__icon error-icon material-icons 
+								  am-typography--color-inherit">error_outline</i> <!----></div> 
+								  <div class="mdc-text-field-helper-line">
+									  <div aria-hidden="true" 
+									  class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+					  Last Name field cannot be left blank
+					</div> 
+				  </div></div></div>
+				  
+					<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 						<div data-v-0691003e="" class="mdc-menu-surface--anchor am-autocomplete" data-v-347c04f5="">
 							<div class="am-text-field">
 								<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
