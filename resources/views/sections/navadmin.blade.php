@@ -1,6 +1,4 @@
-@section('head')
 <link  href="{{ asset('dashboard/css/light.css') }}" rel="stylesheet">
-@endsection
 <nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
