@@ -17,7 +17,7 @@ class CheckIsPro
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user()->isPro === '1')
+        if(Auth::user()->isPro === 1)
         {
             return $next($request);
         }else{
