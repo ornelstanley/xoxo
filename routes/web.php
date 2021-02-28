@@ -33,7 +33,7 @@ Route::post('/search',function(){
    })->name('search.trader');
 
 Route::get('/login/trader',function(){
-    return ;
+    return view('auth.login_trader');
    })->name('login.trader');
 Auth::routes();
 
