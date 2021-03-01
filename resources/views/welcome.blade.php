@@ -27,7 +27,8 @@
   <div class="container">
       <div class="invest__wrapper">
           <div class="invest__image invest-image-desktop">
-              <img data-src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/data/homepage/tab-1.png') }}" title="Invest in famous brands" alt="Invest in famous brands" src="http://127.0.0.1:8000/copy/dce5jani6jm7e.cloudfront.net/data/homepage/tab-1.png" data-loaded="true">
+              <img src="{{ asset('copy/dce5jani6jm7e.cloudfront.net/data/homepage/tab-1.png') }}" 
+              title="Invest in famous brands" alt="Invest in famous brands">
           </div>
           <div class="invest__info">
               <h3>Find Pro-Trader</h3>
