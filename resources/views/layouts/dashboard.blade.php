@@ -14,7 +14,7 @@
 	<title>Admiral Markets Pro | Dashboard</title>
 
 	<link rel="canonical" href="/" />
-	<link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
+	<link rel="shortcut icon" href="{{ asset('dashboard/img/favicon.ico') }}">
 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet">
 
