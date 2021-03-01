@@ -18,23 +18,23 @@
 					<h5 data-v-0691003e="" class="am-typography am-typography--color-text am-typography-h5"> Sign up with Admiral Markets </h5>
 					<div data-v-0691003e="" class="am-spacing am-spacing--size-2 am-spacing--block"></div>
 					<!---->
-					
+					<style>
+						.text-fld
+						{
+							border: solid 1px #969393 !important;
+    width: 100%;
+    border-radius: 0.3rem;
+    padding: 1rem;
+	color:black
+						}</style>
 					<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 						<div data-v-0691003e="" class="am-text-field" type="email" label="Email" placeholder="john@example.com" data-cy="email" id="field_email" data-v-347c04f5="">
 							<div class="mdc-text-field mdc-text-field--outlined">
-								<input type="email" placeholder="john@example.com" data-cy="email" id="email" name="email" required class="mdc-text-field__input -ym-disable-keys">
+								<input type="email" placeholder="Email" data-cy="email" 
+								id="email" name="email" required 
+								class="text-fld">
 									<!---->
-									<div class="mdc-notched-outline mdc-notched-outline--upgraded">
-										<div class="mdc-notched-outline__leading"></div>
-										<div class="mdc-notched-outline__notch">
-											<label class="mdc-floating-label" style="">Email</label>
-											<!---->
-											<!---->
-											<!---->
-											<!---->
-										</div>
-										<div class="mdc-notched-outline__trailing"></div>
-									</div>
+									
 									<!---->
 									<!---->
 								</div>
@@ -45,18 +45,10 @@
 						<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 							<div data-v-0691003e="" class="am-text-field password-field" label="Password" placeholder="********" data-cy="password" id="field_password" data-v-347c04f5="">
 								<div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--outlined">
-									<input type="password" placeholder="********" data-cy="password" id="password" name="password" required class="mdc-text-field__input -ym-disable-keys">
+									<input type="password" placeholder="Password" 
+									data-cy="password" id="password" name="password" 
+									required class="text-fld">
 										<!---->
-										<div class="mdc-notched-outline mdc-notched-outline--upgraded">
-											<div class="mdc-notched-outline__leading"></div>
-											<div class="mdc-notched-outline__notch">
-												<label class="mdc-floating-label" style="">Password</label>
-												<!---->
-												<!---->
-												<!---->
-											</div>
-											<div class="mdc-notched-outline__trailing"></div>
-										</div>
 										<!---->
 										<i tabindex="-2" class="mdc-text-field__icon error-icon material-icons am-typography--color-inherit" role="button">visibility_off</i>
 										<!---->
