@@ -10,17 +10,23 @@
     <title>{{ config('app.name', 'Admiral Markets Pro') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link class="js-stylesheet" href="{{ asset('dashboard/css/light.css') }}" rel="stylesheet">
+	
+    <script src="https://use.fontawesome.com/f567287291.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link href="{{ asset('dashboard/css/bootstrap3-wysihtml5.css') }}" rel="stylesheet">
+	<!-- END SETTINGS --> 
+	<link href="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha256-R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=" >
+
 </head>
-<body>
-    <div id="app">
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
+	<div class="wrapper">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -79,5 +85,60 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{ asset('dashboard/js/app.js') }}"></script>
+	<script src="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.js" crossorigin="anonymous" integrity="sha256-Hgwq1OBpJ276HUP9H3VJkSv9ZCGRGQN+JldPJ8pNcUM=" ></script>
+   
+    <script src="{{ asset('dashboard/js/bootstrap3-wysihtml5.all.min.js') }}"></script>
+	@yield('footer')
+
+	@if (session('success'))
+    <script>
+      "use strict";
+        $(document).ready(function () {
+            swal("Success!", "{{ session('success') }}", "success");
+        });
+    </script>
+@endif
+
+@if (session('error'))
+    <script>
+      "use strict";
+        $(document).ready(function () {
+            swal("Sorry!", "{{ session('error') }}", "error");
+        });
+    </script>
+@endif
+<script>
+@if(Session::has('message'))
+"use strict";
+var type = "{{Session::get('alert-type','info')}}";
+switch (type) {
+    case 'info':
+        toastr.info("{{Session::get('message')}}");
+        break;
+    case 'warning':
+        toastr.warning("{{Session::get('message')}}");
+        break;
+    case 'success':
+        toastr.success("{{Session::get('message')}}");
+        break;
+    case 'error':
+        toastr.error("{{Session::get('message')}}");
+        break;
+}
+@endif
+</script>
+<script>
+window.addEventListener('load',function(){
+    @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                toastr.error("{{ $error }}");
+            @endforeach
+@endif
+});
+</script>
 </body>
+
+
+<!-- Mirrored from appstack.bootlab.io/dashboard-default.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Feb 2021 07:55:10 GMT -->
 </html>
