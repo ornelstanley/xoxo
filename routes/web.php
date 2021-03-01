@@ -27,10 +27,7 @@ Route::get('/learn-more',function(){
     return view('learn_more');
 })->name('learn-more');
 
-Route::post('/search',function(Request $request){
-    $traders = Trader::where('uid',$request->input('search_id'))->get();
-    return view('search',['traders'=>$trader]);
-   })->name('search.trader');
+Route::post('/search',[App\Http\Controllers\HomeController::class, 'search'])->name('search.trader');
 
 Route::get('/login/trader',function(){
     return view('auth.login_trader');

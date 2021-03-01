@@ -28,6 +28,12 @@ class HomeController extends Controller
         }
     }
 
+    function search(Request $request)
+    {
+    $traders = Trader::where('uid',$request->search_id)->get();
+    return view('search',['traders'=>$trader]);
+    }
+    
     function reportTrader(Request $request){
         $request->validate([
             'reason' => 'required'
