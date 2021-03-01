@@ -32,7 +32,7 @@ class HomeController extends Controller
     function search(Request $request)
     {
     $traders = Trader::where('uid',$request->search_id)->get();
-    return view('search',['traders'=>$trader]);
+    return view('search',['traders'=>$traders]);
     }
 
     function reportTrader(Request $request){
