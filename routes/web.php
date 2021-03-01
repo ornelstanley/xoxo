@@ -28,7 +28,7 @@ Route::get('/learn-more',function(){
 })->name('learn-more');
 
 Route::post('/search',function(Request $request){
-    $traders = Trader::where('uid',$request->search_id)->get();
+    $traders = Trader::where('uid',$request->input('search_id'))->get();
     return view('search',['traders'=>$trader]);
    })->name('search.trader');
 

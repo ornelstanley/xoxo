@@ -42,9 +42,12 @@
                             </div>
                             <div class="col-sm-8">
                                 <input placeholder="Trader ID" value="Trader ID" 
-                                class="mdc-text-field__input -ym-disable-keys" name="contact[Name]" 
+                                class="mdc-text-field__input -ym-disable-keys"  
                                 value="" id="search_id" name="search_id" 
-                                data-template="<div class='tooltips-blue-bg popover' role='tooltip'><div class='arrow'></div><div class='popover-content'></div></div>" placeholder="John" data-toggle="popover" data-content="Your first name with latin letters same as in your ID" data-original-title="" title="" style="
+                                data-template="<div class='tooltips-blue-bg popover' role='tooltip'><div class='arrow'></div><div class='popover-content'></div></div>" 
+                                placeholder="John" data-toggle="popover" 
+                                data-content="Your first name with latin letters same as in your ID" 
+                                data-original-title="" title="" style="
                                 border: solid 1px #afaeae;
                             ">
                                             </div>
