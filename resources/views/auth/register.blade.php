@@ -14,7 +14,7 @@
 					@endforeach
 					@endif
 				<div data-v-0691003e="" class="am-card-body">
-					<h5 data-v-0691003e="" class="am-typography am-typography--color-text am-typography-h5"> Sign up with Admiral Markets </h5>
+					<h5 data-v-0691003e="" class="am-typography am-typography--color-text am-typography-h5"> Sign up with Admiral Markets Pro</h5>
 					<div data-v-0691003e="" class="am-spacing am-spacing--size-2 am-spacing--block"></div>
 					<!---->
 					
