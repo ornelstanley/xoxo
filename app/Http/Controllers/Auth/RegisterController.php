@@ -60,7 +60,7 @@ class RegisterController extends Controller
             'country' => ['required'],
             'phone_no' => ['required'],
             'traderID' => ['required']
-        ])->after(function ($validator){
+        ])->after(function ($validator) use ($data){
           $trader = Trader::where('uid',$data['traderID'])->first();
             if($trader==null){
                 $validator->errors()->add(
