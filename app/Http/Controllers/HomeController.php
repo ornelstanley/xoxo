@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\Trader;
 
 class HomeController extends Controller
 {
@@ -33,7 +34,7 @@ class HomeController extends Controller
     $traders = Trader::where('uid',$request->search_id)->get();
     return view('search',['traders'=>$trader]);
     }
-    
+
     function reportTrader(Request $request){
         $request->validate([
             'reason' => 'required'
