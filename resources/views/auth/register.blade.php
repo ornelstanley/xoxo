@@ -426,7 +426,7 @@
 										<!---->
 										<div data-v-1392eba8="" class="signup-single__bottom">
 											<div data-v-1392eba8="" class="signup-single__login am-typography am-typography--color-medium am-typography-body2">Already have an account? 
-												<a href="https://admiralmarkets.com/u0022https:////admiralmarkets.com//login/u0022" target="_self" class="">Login</a>
+												<a href="{{ route('login') }}" target="_self" class="">Login</a>
 											</div>
 										</div>
 									</div>
