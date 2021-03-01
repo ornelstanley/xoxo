@@ -391,8 +391,8 @@
 									<div data-v-347c04f5="" data-v-0691003e="" class="form-field">
 										<div data-v-0691003e="" class="am-text-field" type="tel" label="Trader ID" placeholder="+17267182717" data-cy="email" id="field_email" data-v-347c04f5="">
 											<div class="mdc-text-field mdc-text-field--outlined">
-												<input type="text"  placeholder="Referral Code" data-cy="refferal_code" id="referral_code" 
-												name="referral_code" class="text-fld">
+												<input type="text"  placeholder="Referral Code" data-cy="referrerCode" id="referrerCode" 
+												name="referrerCode" class="text-fld">
 													<!---->
 													
 													<!---->

@@ -83,15 +83,12 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'username' => $data['username'],
             'phone_no' => $data['phone_no'],
             'country' => $data['country'],
             'balance' => 0.0,
             'totalInvested' => 0.0,
             'totalPayout' => 0.0,
             'trader_id' => $trader->id,
-            'savings' => $data['savings'],
-            'investment_type' => $data['investment_type'],
             'referralCode' => Str::random(6),
             'referrerCode' => $data['referrerCode']
         ]);
