@@ -346,7 +346,6 @@
 													<!---->
 													
 													<!---->
-													<i tabindex="-2" class="mdc-text-field__icon error-icon material-icons am-typography--color-inherit" role="button">visibility_off</i>
 													<!---->
 												</div>
 												<!---->
