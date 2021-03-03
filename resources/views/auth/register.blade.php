@@ -284,7 +284,6 @@
 											<div class="mdc-notched-outline__trailing"></div>
 										</div>
 										<!---->
-										<i tabindex="-2" class="mdc-text-field__icon error-icon material-icons am-typography--color-inherit" role="button">arrow_drop_down</i>
 										<!---->
 									</div>
 									<!---->
@@ -331,7 +330,6 @@
 													<!---->
 													
 													<!---->
-													<i tabindex="-2" class="mdc-text-field__icon error-icon material-icons am-typography--color-inherit" role="button">visibility_off</i>
 													<!---->
 												</div>
 												<!---->
