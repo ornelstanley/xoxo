@@ -31,7 +31,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link href="{{ asset('dashboard/css/bootstrap3-wysihtml5.css') }}" rel="stylesheet">
 	<!-- END SETTINGS --> 
-	<link href="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha256-R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=" >
 	@yield('head')
 </head>
 <!--
@@ -105,8 +104,10 @@
 	<script src="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.js" crossorigin="anonymous" integrity="sha256-Hgwq1OBpJ276HUP9H3VJkSv9ZCGRGQN+JldPJ8pNcUM=" ></script>
    
     <script src="{{ asset('dashboard/js/bootstrap3-wysihtml5.all.min.js') }}"></script>
+	
 	@yield('footer')
-
+	<link href="https://pagecdn.io/lib/toastr/2.1.4/toastr.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha256-R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=" >
+	
 	@if (session('success'))
     <script>
       "use strict";
