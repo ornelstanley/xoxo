@@ -61,7 +61,9 @@ class AdminController extends Controller
         $set['faq'] = $request->faq;
         $set['slotOpen'] = $request->has('slotOpen')?true:false;
         $set['document_month'] = $request->documentMonth;
+        if($request->hasFile('kyc')){
         $set['document_1'] = $request->file('document_1')->store('kyc',['disk'=>'public']);
+        }
         $set['announcement'] = $request->announcement;
         $set->save();
         return back()->with('success', 'Settings was Successfully updated!');
