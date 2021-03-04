@@ -111,14 +111,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label for="example-email" class="col-md-12">Document Month</label>
-                                        <div class="col-md-12">
-                                            <input type="text" name="documentMonth" id="documentMonth" 
-                                            value="{{ $set->documentMonth }}"  
-                                            class="form-control form-control-line" >
-                                        </div>
-                                    </div>
+                                   
                                     <div class="form-group">
                                         <label class="col-md-12">Investment Plan Document</label>
                                         <div class="col-md-12">

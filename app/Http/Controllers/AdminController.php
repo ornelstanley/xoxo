@@ -60,7 +60,6 @@ class AdminController extends Controller
         $set['address'] = $request->address;
         $set['faq'] = $request->faq;
         $set['slotOpen'] = $request->has('slotOpen')?true:false;
-        $set['document_month'] = $request->documentMonth;
         if($request->hasFile('kyc')){
         $set['document_1'] = $request->file('document_1')->store('kyc',['disk'=>'public']);
         }
