@@ -39,7 +39,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <form class="form-horizontal form-material" method="post" 
+                                <form class="form-horizontal form-material" method="post" enctype="multipart/form-data"
                                 action="{{route('admin.settings')}}">
                                 @csrf
                                     <div class="form-group">

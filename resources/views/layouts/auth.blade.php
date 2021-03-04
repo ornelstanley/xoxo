@@ -23,7 +23,7 @@
     <meta name="csrf-token"
           content="I4HbpwdQx3vM1qovgtTUry7pfgnc5EJd1sq3AEEh">
 
-    <title>Sign up to open a trading account - Admiral Markets</title>
+    <title>Admiral Markets Pro</title>
     <meta name="title"
           content="Sign up to open a trading account - Admiral Markets"/>
     <meta name="description"
