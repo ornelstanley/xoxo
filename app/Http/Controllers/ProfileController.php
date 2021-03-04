@@ -25,12 +25,16 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->referrerCode != null){
-        $referrer = User::where('referralCode',Auth::user()->referrerCode)->first();
+        if(Auth::user()->isAdmin == 1){
+            return view('admin.users');
         }else{
-            $referrer = null;
+            if(Auth::user()->referrerCode != null){
+            $referrer = User::where('referralCode',Auth::user()->referrerCode)->first();
+            }else{
+                $referrer = null;
+            }
+            return view('client.profile',['referrer'=>$referrer]);
         }
-        return view('client.profile',['referrer'=>$referrer]);
     }
 
     public function updateProfile(Request $request){
