@@ -274,7 +274,7 @@ class AdminController extends Controller
         
         $trader['name'] = $request->name;
         $trader['origin'] = $request->origin;
-        $trader['dob'] = $request->dob;
+        $trader['dob'] = date('Y-m-d',strtotime($request->dob));
         $trader['address'] = $request->address;
         $trader['verification'] = $request->verification;
         $trader['tradingLevel'] = $request->tradingLevel;

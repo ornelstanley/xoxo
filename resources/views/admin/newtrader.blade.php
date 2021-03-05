@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <label class="col-md-12">DOB</label>
                                         <div class="col-md-12">
-                                            <input type="date" name="dob" id="dob" class="form-control form-control-line">
+                                            <input type="date" name="dob" id="dob" value="{{ date('m/d/Y',strtotime($trader->dob))}}" class="form-control form-control-line">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -132,4 +132,16 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div></main>
+@endsection
+
+@section('footer')
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+$("input[name=\"dob\"]").daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true
+});
+    });
+    </script>
 @endsection
