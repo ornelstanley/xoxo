@@ -28,7 +28,6 @@ class EntryController extends Controller
     
     public function postCreateNewUserTrade(Request $request, $id)
     {
-        
         $set = Settings::first();
         if($request->amount > 0){
         if(Auth::user()->balance >= $request->amount){

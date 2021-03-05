@@ -50,12 +50,6 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-12">Username</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" value="{{$user->username}}" id="username" name="username" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
                                                 <label class="col-md-12">Email</label>
                                                 <div class="col-md-12">
                                                     <input type="text" value="{{$user->email}}" id="email" name="email" class="form-control form-control-line">
@@ -98,7 +92,7 @@
                                              <div class="form-group">
                                                 <label class="col-md-12">Profit</label>
                                                 <div class="col-md-12">
-                                                    <input type="text" value="{{$user->profit}}" id="current_entry" name="current_entry" class="form-control form-control-line">
+                                                    <input type="text" value="{{$user->profit}}" id="profit" name="profit" class="form-control form-control-line">
                                                 </div>
                                             </div>
                                             <div class="form-group">

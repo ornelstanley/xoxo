@@ -77,7 +77,6 @@ class AdminController extends Controller
     public function postEditUser(Request $request,$id){
         $request->validate([
             'name' => 'required',
-            'username' => 'required',
             'email' => 'required',
             'country' => 'required',
             'balance' => 'required',

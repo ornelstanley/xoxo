@@ -43,7 +43,7 @@ Route::post('/home/changeTrader', [App\Http\Controllers\HomeController::class, '
 Route::post('/home/reportTrader', [App\Http\Controllers\HomeController::class, 'reportTrader'])->name('report.trader');
 Route::get('/trader',[App\Http\Controllers\TraderController::class, 'index'])->name('trader');
 Route::get('/entry',[App\Http\Controllers\EntryController::class, 'index'])->name('entry');
-Route::post('/entry', [App\Http\Controllers\AdminController::class, 'createNewUserTrade'])->name('entry');
+Route::post('/entry', [App\Http\Controllers\EntryController::class, 'postCreateNewUserTrade'])->name('entry');
 Route::get('/wallet',[App\Http\Controllers\WalletController::class, 'index'])->name('wallet');
 Route::get('/deposit',[App\Http\Controllers\DepositController::class, 'index'])->name('deposit');
 Route::post('/deposit',[App\Http\Controllers\DepositController::class, 'addDeposit'])->name('deposit');
