@@ -115,7 +115,7 @@
                                         @endphp
                                     <img src="https://chart.googleapis.com/chart?cht=qr&chs=175x175&chl={{ session('crypto')}}:{{$address}}" />
                                     <div><span class="badge badge-info">{{$address}}</span></div>
-                                    <div>Deposit funds to the above address. Once payment is detected, a trade will start under the trader</div>
+                                    <div>Deposit funds to the above address. Once payment is detected, your wallet will be funded</div>
                                     @endif
                                     </div></div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" 

@@ -36,20 +36,17 @@
         <b>Version: {{ $set->version }}</b></h5>
       </div></div>
     <div class="row">
-      <div class="col-12 col-sm-6 col-xxl d-flex">
+      <div class="col-12 col-sm-12 col-xxl d-flex">
         <div class="card illustration flex-fill">
           <div class="card-body p-0 d-flex flex-fill">
             <div class="row no-gutters w-100">
-              <div class="col-6">
+              <div class="col-12">
                 <div class="illustration-text p-3 m-1">
                   <h4 class="illustration-text">Welcome {{ Auth::user()->name}}</h4>
                   <div class="mb-0">
                         {{ $set->announcement }}
                   </div>
                 </div>
-              </div>
-              <div class="col-6 align-self-end text-right">
-                <img src="dashboard/img/illustrations/customer-support.png" alt="Customer Support" class="img-fluid illustration-img">
               </div>
             </div>
           </div>

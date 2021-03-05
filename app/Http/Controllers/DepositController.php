@@ -47,6 +47,6 @@ class DepositController extends Controller
                     ('New Deposit Request');
                  $message->from($set->email,'AdmiralMarketsPro');
               });
-        return back()->with('success', 'Deposit request received, awaiting payment')->withInput();
+        return back()->with('success', 'Deposit request received, awaiting deposit')->withInput();
     }
 }

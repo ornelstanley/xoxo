@@ -87,7 +87,6 @@ class AdminController extends Controller
         ]);
         $user = User::find($id);
         $user['name'] = $request->name;
-        $user['username'] = $request->username;
         $user['email'] = $request->email;
         $user['country'] = $request->country;
         $user['balance'] = $request->balance;
@@ -260,14 +259,7 @@ class AdminController extends Controller
             $trader['octName'] = $request->octName;
             $trader['novName'] = $request->novName;
             $trader['decName'] = $request->decName;
-            $trader['traderReport'] = $request->file('traderReport')->store('kyc',['disk'=>'public']);
-            $trader['traderReportMonth'] = $request->traderReportMonth;
-            $trader['totalClients'] = $request->totalClients;
-            $trader['totalTradingVolume'] = $request->totalTradingVolume;
-            $trader['totalTradingVolumeDate'] = $request->totalTradingVolumeDate;
-            $trader['totalTurnover'] = $request->totalTurnover;
-            $trader['totalTurnoverDate'] = $request->totalTurnoverDate;
-            $trader->save();
+           $trader->save();
             return back()->with('success', 'Trader was Successfully updated!');
         }
         if($request->has('form1')){
@@ -284,7 +276,17 @@ class AdminController extends Controller
         $trader['expertise'] = $request->expertise;
         $trader['phoneNo'] = $request->phoneNo;
         $trader['contactLink'] = $request->contactLink;
-        $trader['uid'] = $request->uid;
+        $trader['uid'] = $request->uid; 
+        if($request->hasFile('traderReport')){
+        $trader['traderReport'] = $request->file('traderReport')->store('kyc',['disk'=>'public']);
+        }
+        $trader['traderReportMonth'] = $request->traderReportMonth;
+        $trader['totalClients'] = $request->totalClients;
+        $trader['totalTradingVolume'] = $request->totalTradingVolume;
+        $trader['totalTradingVolumeDate'] = $request->totalTradingVolumeDate;
+        $trader['totalTurnover'] = $request->totalTurnover;
+        $trader['totalTurnoverDate'] = $request->totalTurnoverDate;
+        
         if($request->hasFile('profile')){
         $trader['profileUrl'] = $request->file('profile')->store('traders',['disk'=>'public']);
         }
