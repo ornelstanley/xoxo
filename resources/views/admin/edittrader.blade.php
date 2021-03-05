@@ -122,7 +122,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-12">UID</label>
+                                                <label class="col-md-12">Trader ID</label>
                                                 <div class="col-md-12">
                                                     <input type="text" name="uid" id="uid" value="{{$trader->uid}}" class="form-control form-control-line">
                                                 </div>
@@ -316,4 +316,16 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div></main>
+@endsection
+
+@section('footer')
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+$("input[name=\"dob\"]").daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true
+});
+    });
+    </script>
 @endsection

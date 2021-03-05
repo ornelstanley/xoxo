@@ -123,7 +123,7 @@ width: 100%;
     line-height: inherit;
     height:inherit;
     padding-bottom: 10px;
-"><a class="btn btn-info" href="/register?traderID={{$trader->id}}">Trade under {{ $trader->name }}</a></div>
+"><a class="btn btn-info" href="./register?traderID={{$trader->id}}">Trade under {{ $trader->name }}</a></div>
                             <!----></div>
                             
                 @endforeach
