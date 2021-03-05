@@ -65,7 +65,7 @@
                                             <div class="form-group">
                                                 <label class="col-md-12">DOB</label>
                                                 <div class="col-md-12">
-                                                    <input type="text" name="dob" id="dob" value="{{ $trader->dob}}" class="form-control form-control-line">
+                                                    <input type="text" name="dob" id="dob" value="{{ date('m/d/Y',strtotime($trader->dob))}}" class="form-control form-control-line">
                                                 </div>
                                             </div>
                                             <div class="form-group">
