@@ -1,4 +1,6 @@
 /node_modules
+.env
+.env.example
 .phpunit.result.cache
 docker-compose.override.yml
 Homestead.json
